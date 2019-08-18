@@ -61,7 +61,7 @@ export const initCommand: CliCommand<UniConfig, {
 
 async function getInputs({ ui }: { ui: Inquirer }, args: { name?: string, repo?: string }) {
   const inputs: any = { year: new Date().getFullYear() }
-  const questions: inquirer.Question<inquirer.Answers>[] = []
+  const questions: inquirer.QuestionCollection[] = []
   if (args.name) {
     inputs.name = args.name
   }
