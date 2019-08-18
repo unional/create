@@ -12,7 +12,7 @@
 [![semantic-release][semantic-release-image]][semantic-release-url]
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 
-Development CLI tool.
+@unional create repo tools.
 
 [npm-image]: https://img.shields.io/npm/v/@unional/create.svg?style=flat
 [npm-url]: https://npmjs.org/package/@unional/create

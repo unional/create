@@ -11,7 +11,7 @@ cp.spawn('tsc', ['-w'], { shell: true })
       if (!runner) {
         runner = cp.spawn('jest', ['--watch'], {
           stdio: 'inherit',
-          shell: true
+          shell: true,
         })
       }
     }

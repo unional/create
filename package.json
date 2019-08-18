@@ -9,18 +9,35 @@
   "scripts": {
     "build": "tsc -b",
     "build:watch": "tsc -b -w",
-    "lint": "eslint packages/**/*.ts",
+    "clean": "lerna run clean",
+    "coverage": "jest --coverage",
+    "dc": "lerna run dependency-check",
+    "lint": "eslint .",
+    "nuke": "yarn clean && lerna clean -y && rimraf node_modules",
+    "release": "lerna publish",
     "test": "jest",
     "test:watch": "jest --watch",
-    "verify": "yarn test",
+    "verify": "yarn lint && yarn build && yarn dc && yarn coverage",
     "watch": "yarn test:watch"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
     "@typescript-eslint/parser": "^2.0.0",
+    "commitlint-circle": "^1.0.0",
     "eslint": "^6.1.0",
-    "eslint-plugin-harmony": "^2.0.1",
+    "eslint-plugin-harmony": "^2.0.4",
+    "husky": "^3.0.4",
     "jest-junit": "^7.0.0",
-    "jest-watch-toggle-config": "^1.0.2"
+    "jest-watch-toggle-config": "^1.0.2",
+    "lerna": "^3.16.4",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.5.3"
   }
 }

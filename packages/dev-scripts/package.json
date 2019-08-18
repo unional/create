@@ -12,32 +12,19 @@
   },
   "license": "MIT",
   "bin": {
-    "uni-dev-scripts": "lib/bin"
+    "dev-scripts": "lib/bin.js"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "clean": "rimraf lib",
-    "coverage": "jest --coverage",
-    "coverage:ci": "jest --coverage --config jest.config.ci.json",
-    "dc": "yarn run dependency-check",
-    "dependency-check": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev",
-    "lint": "tslint -p tsconfig.json",
-    "test": "tsc && jest",
-    "verify": "yarn run lint && yarn run build && yarn run coverage",
-    "verify:ci": "yarn run lint && yarn run build && yarn run coverage:ci",
-    "watch": "jest --watch"
+    "clean": "rimraf .ts coverage lib libm",
+    "dependency-check": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev"
   },
   "dependencies": {
-    "chalk": "^2.4.2",
-    "clibuilder": "^4.2.4",
-    "find-installed-packages": "^2.0.0",
-    "update-notifier": "^2.5.0"
+    "clibuilder": "^5.0.0",
+    "update-notifier": "^3.0.1"
   },
   "devDependencies": {
     "@types/tmp": "^0.0.33",
     "@types/update-notifier": "^2.5.0",
-    "@unional/devpkg-node": "^1.2.3",
-    "assertron": "^6.1.0",
     "tmp": "^0.0.33"
   }
 }
