@@ -110,4 +110,4 @@ jobs:
       - attach_workspace:
           at: '.'
       - run: cd packages/create && npm run build
-      - run: npx lerna exec --concurrency 1 -- npx semantic-release -e semantic-release-monorepo
+      # - run: npx lerna exec --concurrency 1 -- npx semantic-release -e semantic-release-monorepo
