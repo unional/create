@@ -1,0 +1,32 @@
+{
+  "files": [],
+  "exclude": [
+    "packages/*/lib*"
+  ],
+  "references": [
+    {
+      "path": "packages/create/tsconfig.libm.json"
+    },
+    {
+      "path": "packages/dev-scripts/tsconfig.libm.json"
+    },
+    {
+      "path": "packages/devpkg-monorepo/tsconfig.libm.json"
+    },
+    {
+      "path": "packages/devpkg-node/tsconfig.libm.json"
+    },
+    {
+      "path": "packages/create/tsconfig.lib.json"
+    },
+    {
+      "path": "packages/dev-scripts/tsconfig.lib.json"
+    },
+    {
+      "path": "packages/devpkg-monorepo/tsconfig.lib.json"
+    },
+    {
+      "path": "packages/devpkg-node/tsconfig.lib.json"
+    }
+  ]
+}

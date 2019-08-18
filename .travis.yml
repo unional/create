@@ -1,40 +1,22 @@
-sudo: false
-dist: trusty
 language: node_js
 cache:
   directories:
     - ~/.npm
+  yarn: true
 notifications:
   email: false
 node_js:
-  - lts/*
   - '11'
-  - '10'
-  - '9'
-  - '8'
-  - '6'
 branches:
   only:
     - master
     - /^greenkeeper.*$/
-
-# before_install:
-#   - ./scripts/run-on-node-version.sh 10 "npm install -g greenkeeper-lockfile@1"
-
-# before_script:
-#   - ./scripts/run-on-node-version.sh 10 "greenkeeper-lockfile-update"
-
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH="$HOME/.yarn/bin:$PATH"
 script:
-  - npm run verify
-
-after_success:
-  # - ./scripts/run-on-node-version.sh 10 "npm install -g coveralls codecov"
-  # - npm install -g travis-deploy-once
-  # - travis-deploy-once "npm run semantic-release"
-  # Need to get the right coverage result
-  - ./scripts/run-on-node-version.sh 11 "npm install -g codacy-coverage && cat ./packages/create/coverage/lcov.info | codacy-coverage"
-  - ./scripts/run-on-node-version.sh 11 "npm install -g coveralls && cat ./packages/create/coverage/lcov.info | coveralls"
-  # - ./scripts/run-on-node-version.sh 10 "codecov"
-
-# after_script:
-#   - ./scripts/run-on-node-version.sh 10 "greenkeeper-lockfile-upload"
+  - yarn
+  - yarn build
+  - yarn coverage --reporters=default --maxWorkers=2
+  - npm install -g codacy-coverage && cat ./coverage/lcov.info | codacy-coverage
+  - npm install -g coveralls && cat ./coverage/lcov.info | coveralls

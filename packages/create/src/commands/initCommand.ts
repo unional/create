@@ -1,5 +1,6 @@
 /* istanbul ignore file */
 import { CliCommand, Inquirer } from 'clibuilder';
+import { QuestionCollection } from 'inquirer';
 import { unpartial } from 'unpartial';
 import { copyArtifacts } from '../devpkg-io';
 import { getRemote, getRepositoryName, isGitRepo } from '../git';
@@ -7,7 +8,6 @@ import { getConfig } from '../git/getConfig';
 import { initializeFolder } from '../io';
 import { installDev } from '../npm';
 import { UniConfig } from '../types';
-import inquirer = require('inquirer');
 
 export const initCommand: CliCommand<UniConfig, {
   _dep: {
@@ -61,7 +61,7 @@ export const initCommand: CliCommand<UniConfig, {
 
 async function getInputs({ ui }: { ui: Inquirer }, args: { name?: string, repo?: string }) {
   const inputs: any = { year: new Date().getFullYear() }
-  const questions: inquirer.QuestionCollection[] = []
+  const questions: QuestionCollection[] = []
   if (args.name) {
     inputs.name = args.name
   }

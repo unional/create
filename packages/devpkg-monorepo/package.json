@@ -1,14 +1,7 @@
 {
-  "name": "@unional/devpkg-node",
+  "name": "@unional/devpkg-monorepo",
   "version": "1.4.0",
-  "description": "Development package for NodeJS development",
-  "keywords": [
-    "@unional/create",
-    "eslint",
-    "jest",
-    "nodejs",
-    "typescript"
-  ],
+  "description": "Development package for monorepo",
   "homepage": "https://github.com/unional/create",
   "bugs": {
     "url": "https://github.com/unional/create/issues"
@@ -18,14 +11,21 @@
     "url": "https://github.com/unional/create.git"
   },
   "license": "MIT",
+  "keywords": [
+    "@unional/create",
+    "monorepo",
+    "nodejs",
+    "lerna",
+    "typescript",
+    "jest",
+    "eslint"
+  ],
   "bin": {
     "dev-scripts": "lib/bin.js"
   },
   "files": [
     "lib",
-    "libm",
-    "monorepo",
-    "simple"
+    "artifacts"
   ],
   "dependencies": {
     "@types/jest": "^24.0.17",
@@ -33,7 +33,7 @@
     "@typescript-eslint/eslint-plugin": "^2.0.0",
     "@typescript-eslint/parser": "^2.0.0",
     "clibuilder": "^5.0.0",
-    "dependency-check": "^3.3.0",
+    "dependency-check": "^4.1.0",
     "eslint": "^6.1.0",
     "eslint-plugin-harmony": "^2.0.4",
     "is-ci": "^2.0.0",

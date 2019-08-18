@@ -3,37 +3,37 @@ module.exports = isCI ? {
   'preset': 'ts-jest',
   'globals': {
     'ts-jest': {
-      'diagnostics': false
-    }
+      'diagnostics': false,
+    },
   },
   'collectCoverageFrom': [
     '<rootDir>/src/**/*.[jt]s',
-    '!<rootDir>/src/bin.[jt]s'
+    '!<rootDir>/src/bin.[jt]s',
   ],
   'roots': [
-    '<rootDir>/src'
+    '<rootDir>/src',
   ],
   'reporters': [
     'default',
     [
       'jest-junit',
       {
-        'output': '.reports/junit/js-test-results.xml'
-      }
+        'output': '.reports/junit/js-test-results.xml',
+      },
     ],
   ],
   'testEnvironment': 'node',
-  'testMatch': ['**/?(*.)+(spec|test|integrate|accept|system|unit).[jt]s?(x)']
+  'testMatch': ['**/?(*.)+(spec|test|integrate|accept|system|unit).[jt]s?(x)'],
 } : {
     'preset': 'ts-jest',
     'globals': {
       'ts-jest': {
-        'diagnostics': false
-      }
+        'diagnostics': false,
+      },
     },
     'collectCoverageFrom': [
       '<rootDir>/src/**/*.[jt]s',
-      '!<rootDir>/src/bin.[jt]s'
+      '!<rootDir>/src/bin.[jt]s',
     ],
     'reporters': [
       'default',
@@ -41,7 +41,7 @@ module.exports = isCI ? {
       ['jest-audio-reporter', { volume: 0.3 }],
     ],
     'roots': [
-      '<rootDir>/src'
+      '<rootDir>/src',
     ],
     'testEnvironment': 'node',
     'testMatch': ['**/?(*.)+(spec|test|integrate|accept|system|unit).[jt]s?(x)'],
@@ -51,10 +51,10 @@ module.exports = isCI ? {
       'jest-watch-typeahead/filename',
       'jest-watch-typeahead/testname',
       [
-        'jest-watch-toggle-config', { 'setting': 'verbose' }
+        'jest-watch-toggle-config', { 'setting': 'verbose' },
       ],
       [
-        'jest-watch-toggle-config', { 'setting': 'collectCoverage' }
-      ]
-    ]
+        'jest-watch-toggle-config', { 'setting': 'collectCoverage' },
+      ],
+    ],
   }

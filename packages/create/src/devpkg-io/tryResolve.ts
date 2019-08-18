@@ -3,7 +3,6 @@ import { PackageNotFound } from './errors';
 
 export function tryResolve(packageName: string) {
   try {
-
     const indexPath = require.resolve(packageName, { paths: [process.cwd()] })
     return path.dirname(indexPath)
   }

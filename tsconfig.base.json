@@ -1,24 +1,16 @@
 {
   "compilerOptions": {
-    "declaration": true,
     "esModuleInterop": true,
     "lib": [
       "es2015"
     ],
-    "module": "commonjs",
     "moduleResolution": "node",
     "newLine": "LF",
     "noUnusedLocals": true,
-    "noUnusedParameters": false,
-    "outDir": "lib",
+    "outDir": ".nowhere",
     "removeComments": false,
+    "resolveJsonModule": true,
     "sourceMap": true,
     "strict": true
-  },
-  "include": [
-    "typings"
-  ],
-  "files": [
-    "src/bin.ts"
-  ]
+  }
 }

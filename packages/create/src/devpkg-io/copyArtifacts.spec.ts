@@ -10,7 +10,7 @@ test('not exist package throws PackageNotFound', async () => {
   t.strictEqual(err.packageName, 'not-exist-package')
 })
 
-test('not exist directory throws FolderNotFoundInPackage', async () => {
+test.only('not exist directory throws FolderNotFoundInPackage', async () => {
   const err = await a.throws(() => copyArtifacts('@unional/devpkg-node', 'not-exist'), FolderNotFoundInPackage)
 
   t.strictEqual(err.packageName, '@unional/devpkg-node')

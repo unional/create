@@ -3,39 +3,39 @@ workflows:
   version: 2
   all:
     jobs:
-      - node-latest
-      - node10:
+      - node-latest:
+          filters:
+            tags:
+              ignore: /.*/
+      - node11:
           requires:
             - node-latest
-      - node9:
+      - node10:
           requires:
             - node-latest
       - node8:
           requires:
             - node-latest
-      # - node6:
-      #     requires:
-      #       - node-latest
-      # - release:
-      #     filters:
-      #       branches:
-      #         only: master
-      #     requires:
-      #       - node-latest
-      #       - node10
-      #       - node9
-      #       - node8
-      #       - node6
+      - release:
+          context: publish
+          filters:
+            branches:
+              only: master
+          requires:
+            - node-latest
+            - node11
+            - node10
+            - node8
 jobs:
-  local-test:
+  local:
     docker:
-      - image: circleci/node:11
+      - image: circleci/node:12
     steps:
       - checkout
-      - run: npm run verify
+      - run: yarn verify
   node-latest:
     docker:
-      - image: circleci/node:11
+      - image: circleci/node:12
     steps:
       - checkout
       - restore_cache:
@@ -45,33 +45,50 @@ jobs:
           name: Install Dependencies
           command: |
             if [ ! -d node_modules ]; then
-              yarn install
+              yarn
             fi
       - save_cache:
           name: Save node modules cache
           key: node_modules-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
-            - packages/create/node_modules
+      - run: yarn commitlint-circle
+      - run: yarn lint
+      - run: yarn build
+      - run: yarn dc
+      - run: yarn coverage --maxWorkers=2
+      - run: npx codecov
+      - store_test_results:
+          path: .reports/junit
+      - run: yarn bundle
       - persist_to_workspace:
           root: '.'
           paths:
             - node_modules
-            - packages/create/node_modules
-      - run: cd packages/create && npm run verify:ci
-      - run: cd packages/create && npx codecov
-      - store_test_results:
-          path: packages/create/.reports/junit
-  node10:
+            - .tsbuildinfo
+            - ./packages/*/dist/*
+            - ./packages/*/lib/*
+            - ./packages/*/libm/*
+  node11:
     docker:
-      - image: 'circleci/node:9'
+      - image: 'circleci/node:11'
     steps:
       - checkout
       - attach_workspace:
           at: '.'
-      - run: cd packages/create && npm run verify:ci
+      - run: yarn coverage --maxWorkers=2
       - store_test_results:
-          path: packages/create/.reports/junit
+          path: .reports/junit
+  node10:
+    docker:
+      - image: 'circleci/node:10'
+    steps:
+      - checkout
+      - attach_workspace:
+          at: '.'
+      - run: yarn coverage --maxWorkers=2
+      - store_test_results:
+          path: .reports/junit
   node9:
     docker:
       - image: 'circleci/node:9'
@@ -79,9 +96,9 @@ jobs:
       - checkout
       - attach_workspace:
           at: '.'
-      - run: cd packages/create && npm run verify:ci
+      - run: yarn coverage --maxWorkers=2
       - store_test_results:
-          path: packages/create/.reports/junit
+          path: .reports/junit
   node8:
     docker:
       - image: 'circleci/node:8'
@@ -89,25 +106,19 @@ jobs:
       - checkout
       - attach_workspace:
           at: '.'
-      - run: cd packages/create && npm run verify:ci
+      - run: yarn coverage --maxWorkers=2
       - store_test_results:
-          path: packages/create/.reports/junit
-  node6:
-    docker:
-      - image: 'circleci/node:6'
-    steps:
-      - checkout
-      - attach_workspace:
-          at: '.'
-      - run: cd packages/create && npm run verify:ci
-      - store_test_results:
-          path: packages/create/.reports/junit
+          path: .reports/junit
   release:
     docker:
-      - image: circleci/node:11
+      - image: circleci/node:12
     steps:
       - checkout
       - attach_workspace:
           at: '.'
-      - run: cd packages/create && npm run build
-      # - run: npx lerna exec --concurrency 1 -- npx semantic-release -e semantic-release-monorepo
+      - run: git config user.email $GIT_CONFIG_EMAIL
+      - run: git config user.name $GIT_CONFIG_NAME
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+      - run: yarn release

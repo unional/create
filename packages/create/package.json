@@ -13,23 +13,15 @@
   "license": "MIT",
   "files": [
     "artifacts",
-    "lib"
+    "lib",
+    "libm"
   ],
   "bin": {
-    "uni": "lib/bin.js"
+    "create": "lib/bin.js"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "clean": "rimraf lib",
-    "coverage": "jest --coverage",
-    "coverage:ci": "jest --coverage --config jest.config.ci.json",
-    "dc": "yarn run dependency-check",
-    "dependency-check": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev",
-    "lint": "eslint \"src/**\"",
-    "test": "tsc && jest",
-    "verify": "yarn run lint && yarn run build && yarn run coverage",
-    "verify:ci": "yarn run lint && yarn run build && yarn run coverage:ci",
-    "watch": "jest --watch"
+    "clean": "rimraf .ts coverage lib libm",
+    "dependency-check": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev"
   },
   "dependencies": {
     "clibuilder": "^5.0.0",
