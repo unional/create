@@ -52,16 +52,16 @@ jobs:
           key: node_modules-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
-            - packages/uni-cli/node_modules
+            - packages/create/node_modules
       - persist_to_workspace:
           root: '.'
           paths:
             - node_modules
-            - packages/uni-cli/node_modules
-      - run: cd packages/uni-cli && npm run verify:ci
-      - run: cd packages/uni-cli && npx codecov
+            - packages/create/node_modules
+      - run: cd packages/create && npm run verify:ci
+      - run: cd packages/create && npx codecov
       - store_test_results:
-          path: packages/uni-cli/.reports/junit
+          path: packages/create/.reports/junit
   node10:
     docker:
       - image: 'circleci/node:9'
@@ -69,9 +69,9 @@ jobs:
       - checkout
       - attach_workspace:
           at: '.'
-      - run: cd packages/uni-cli && npm run verify:ci
+      - run: cd packages/create && npm run verify:ci
       - store_test_results:
-          path: packages/uni-cli/.reports/junit
+          path: packages/create/.reports/junit
   node9:
     docker:
       - image: 'circleci/node:9'
@@ -79,9 +79,9 @@ jobs:
       - checkout
       - attach_workspace:
           at: '.'
-      - run: cd packages/uni-cli && npm run verify:ci
+      - run: cd packages/create && npm run verify:ci
       - store_test_results:
-          path: packages/uni-cli/.reports/junit
+          path: packages/create/.reports/junit
   node8:
     docker:
       - image: 'circleci/node:8'
@@ -89,9 +89,9 @@ jobs:
       - checkout
       - attach_workspace:
           at: '.'
-      - run: cd packages/uni-cli && npm run verify:ci
+      - run: cd packages/create && npm run verify:ci
       - store_test_results:
-          path: packages/uni-cli/.reports/junit
+          path: packages/create/.reports/junit
   node6:
     docker:
       - image: 'circleci/node:6'
@@ -99,9 +99,9 @@ jobs:
       - checkout
       - attach_workspace:
           at: '.'
-      - run: cd packages/uni-cli && npm run verify:ci
+      - run: cd packages/create && npm run verify:ci
       - store_test_results:
-          path: packages/uni-cli/.reports/junit
+          path: packages/create/.reports/junit
   release:
     docker:
       - image: circleci/node:11
@@ -109,5 +109,5 @@ jobs:
       - checkout
       - attach_workspace:
           at: '.'
-      - run: cd packages/uni-cli && npm run build
+      - run: cd packages/create && npm run build
       - run: npx lerna exec --concurrency 1 -- npx semantic-release -e semantic-release-monorepo
