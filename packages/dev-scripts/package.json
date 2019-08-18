@@ -2,13 +2,13 @@
   "name": "@unional/dev-scripts",
   "version": "0.0.0",
   "description": "Development scripts",
-  "homepage": "https://github.com/unional/uni-cli",
+  "homepage": "https://github.com/unional/create",
   "bugs": {
-    "url": "https://github.com/unional/uni-cli/issues"
+    "url": "https://github.com/unional/create/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/unional/uni-cli.git"
+    "url": "https://github.com/unional/create.git"
   },
   "license": "MIT",
   "bin": {

@@ -5,8 +5,8 @@
         "package.json",
         "packages/devpkg-node/monorepo/artifacts/package.json",
         "packages/devpkg-node/package.json",
-        "packages/uni-cli/artifacts/templates/package.json",
-        "packages/uni-cli/package.json"
+        "packages/create/artifacts/templates/package.json",
+        "packages/create/package.json"
       ]
     }
   }
