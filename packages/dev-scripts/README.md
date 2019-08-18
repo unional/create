@@ -13,19 +13,19 @@
 
 Development scripts.
 
-[npm-image]: https://img.shields.io/npm/v/@unional/uni-cli.svg?style=flat
-[npm-url]: https://npmjs.org/package/@unional/uni-cli
-[downloads-image]: https://img.shields.io/npm/dm/@unional/uni-cli.svg?style=flat
-[downloads-url]: https://npmjs.org/package/@unional/uni-cli
-[circleci-image]: https://circleci.com/gh/unional/uni-cli/tree/master.svg?style=shield
-[circleci-url]: https://circleci.com/gh/unional/uni-cli/tree/master
-[travis-image]: https://img.shields.io/travis/unional/uni-cli/master.svg?style=flat
-[travis-url]: https://travis-ci.org/unional/uni-cli?branch=master
-[codecov-image]: https://codecov.io/gh/unional/uni-cli/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/unional/uni-cli
-[coveralls-image]: https://coveralls.io/repos/github/unional/uni-cli/badge.svg
-[coveralls-url]: https://coveralls.io/github/unional/uni-cli
-[green-keeper-image]: https://badges.greenkeeper.io/unional/uni-cli.svg
+[npm-image]: https://img.shields.io/npm/v/@unional/create.svg?style=flat
+[npm-url]: https://npmjs.org/package/@unional/create
+[downloads-image]: https://img.shields.io/npm/dm/@unional/create.svg?style=flat
+[downloads-url]: https://npmjs.org/package/@unional/create
+[circleci-image]: https://circleci.com/gh/unional/create/tree/master.svg?style=shield
+[circleci-url]: https://circleci.com/gh/unional/create/tree/master
+[travis-image]: https://img.shields.io/travis/unional/create/master.svg?style=flat
+[travis-url]: https://travis-ci.org/unional/create?branch=master
+[codecov-image]: https://codecov.io/gh/unional/create/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/unional/create
+[coveralls-image]: https://coveralls.io/repos/github/unional/create/badge.svg
+[coveralls-url]: https://coveralls.io/github/unional/create
+[green-keeper-image]: https://badges.greenkeeper.io/unional/create.svg
 [green-keeper-url]:https://greenkeeper.io/
 [semantic-release-image]:https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [semantic-release-url]:https://github.com/semantic-release/semantic-release

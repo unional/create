@@ -10,7 +10,7 @@ export const initCommand: CliCommand<CliConfig> = {
     if (packages.length === 0) {
       this.ui.error(`
 Could not locate any installed plugin.
-Please use ${chalk.green('uni-cli')} to install plugins.
+Please use ${chalk.green('create')} to install plugins.
 `)
     }
   },

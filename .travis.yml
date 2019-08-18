@@ -32,8 +32,8 @@ after_success:
   # - npm install -g travis-deploy-once
   # - travis-deploy-once "npm run semantic-release"
   # Need to get the right coverage result
-  - ./scripts/run-on-node-version.sh 11 "npm install -g codacy-coverage && cat ./packages/uni-cli/coverage/lcov.info | codacy-coverage"
-  - ./scripts/run-on-node-version.sh 11 "npm install -g coveralls && cat ./packages/uni-cli/coverage/lcov.info | coveralls"
+  - ./scripts/run-on-node-version.sh 11 "npm install -g codacy-coverage && cat ./packages/create/coverage/lcov.info | codacy-coverage"
+  - ./scripts/run-on-node-version.sh 11 "npm install -g coveralls && cat ./packages/create/coverage/lcov.info | coveralls"
   # - ./scripts/run-on-node-version.sh 10 "codecov"
 
 # after_script:

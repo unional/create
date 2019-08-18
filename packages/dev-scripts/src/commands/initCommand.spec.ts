@@ -10,6 +10,6 @@ test('No plugins installed should show error message', async () => {
   const message = generateDisplayedMessage(ui.display.errorLogs)
   expect(message).toEqual(`
 Could not locate any installed plugin.
-Please use ${chalk.green('uni-cli')} to install plugins.
+Please use ${chalk.green('create')} to install plugins.
 `)
 })
