@@ -13,6 +13,12 @@
 
 Creates and manage monorepo.
 
+## Usage
+
+```sh
+npm init @unional/monorepo <repository-name>
+```
+
 ## Tools
 
 - CircleCI

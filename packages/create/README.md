@@ -11,7 +11,13 @@
 [![Greenkeeper badge][green-keeper-image]][green-keeper-url]
 [![semantic-release][semantic-release-image]][semantic-release-url]
 
-@unional create repo tool.
+Creates and manage repository.
+
+## Usage
+
+```sh
+npm init @unional <repository-name>
+```
 
 [npm-image]: https://img.shields.io/npm/v/@unional/create.svg?style=flat
 [npm-url]: https://npmjs.org/package/@unional/create
