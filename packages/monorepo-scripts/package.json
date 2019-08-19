@@ -18,7 +18,8 @@
     "monorepo",
     "nodejs",
     "travis",
-    "typescript"
+    "typescript",
+    "yarn"
   ],
   "homepage": "https://github.com/unional/create/tree/master/packages/monorepo-scripts",
   "bugs": {
