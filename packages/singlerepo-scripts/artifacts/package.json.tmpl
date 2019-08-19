@@ -30,7 +30,7 @@
     "coverage": "jest --coverage",
     "depcheck": "yarn dependency-check",
     "dependency-check": "dependency-check . --unused --no-dev -i @types/inquirer -i standard-log-color && dependency-check . --missing --no-dev",
-    "lint": "eslint \"src/**/*.ts\"",
+    "lint": "eslint \"**/*.{ts,tsx,js,jsx}\"",
     "nuke": "yarn clean && rimraf node_modules",
     "test": "jest",
     "test:watch": "jest --watch",
