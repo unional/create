@@ -1,7 +1,7 @@
 {
   "name": "@unional/create-monorepo",
   "version": "0.0.0",
-  "description": "create monorepo",
+  "description": "creates and manages monorepo",
   "keywords": [
     "@unional/create",
     "circleci",
@@ -20,7 +20,7 @@
     "travis",
     "typescript"
   ],
-  "homepage": "https://github.com/unional/create",
+  "homepage": "https://github.com/unional/create/tree/master/packages/create-monorepo",
   "bugs": {
     "url": "https://github.com/unional/create/issues"
   },
@@ -37,6 +37,10 @@
   ],
   "bin": {
     "monorepo-scripts": "lib/bin.js"
+  },
+  "scripts": {
+    "clean": "rimraf .ts coverage lib libm",
+    "dependency-check": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev"
   },
   "dependencies": {
     "@commitlint/cli": "^8.1.0",
