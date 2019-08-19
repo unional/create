@@ -3,7 +3,9 @@
   "compilerOptions": {
     "rootDir": "src"
   },
-  "references": [
+  "references": [{
+    "path": "../createutils"
+  }
   ],
   "include": [
     "src",

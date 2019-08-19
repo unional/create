@@ -43,6 +43,7 @@
     "dependency-check": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev"
   },
   "dependencies": {
+    "@unional/createutils": "^1.0.0",
     "chalk": "^2.4.2",
     "clibuilder": "^5.0.1",
     "update-notifier": "^3.0.1"

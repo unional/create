@@ -1,9 +1,9 @@
+import { getGitRemote, isGitRepo } from '@unional/createutils';
 import t from 'assert';
 import fs from 'fs';
 import path from 'path';
 import { dirSync } from 'tmp';
 import { initializeFolder } from '.';
-import { getRemote, isGitRepo } from '../git';
 
 test('copy LICENSE', async () => {
   const tmp = dirSync()
@@ -42,6 +42,6 @@ test('will do git init if the repo is not a git repo', async () => {
 test('will add remote if input.noRemote is true', async () => {
   const tmp = dirSync()
   await initializeFolder({ repository: 'user/dummy', noRemote: true }, tmp.name)
-  const remote = getRemote(tmp.name)
+  const remote = getGitRemote(tmp.name)
   t(/user\/dummy/.test(remote!))
 })

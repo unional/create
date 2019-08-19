@@ -1,10 +1,9 @@
 /* istanbul ignore file */
+import { getGitConfig, getGitRemote, getGitRepositoryName, isGitRepo } from '@unional/createutils';
 import { CliCommand, Inquirer } from 'clibuilder';
 import { QuestionCollection } from 'inquirer';
 import { unpartial } from 'unpartial';
 import { copyArtifacts } from '../devpkg-io';
-import { getRemote, getRepositoryName, isGitRepo } from '../git';
-import { getConfig } from '../git/getConfig';
 import { initializeFolder } from '../io';
 import { installDev } from '../npm';
 import { UniConfig } from '../types';
@@ -77,7 +76,7 @@ async function getInputs({ ui }: { ui: Inquirer }, args: { name?: string, repo?:
   else {
     inputs.isGitRepo = isGitRepo()
     if (inputs.isGitRepo) {
-      const repo = inputs.repository = getRepositoryName(getRemote())
+      const repo = inputs.repository = getGitRepositoryName(getGitRemote())
       if (!repo) {
         inputs.noRemote = true
       }
@@ -99,14 +98,14 @@ async function getInputs({ ui }: { ui: Inquirer }, args: { name?: string, repo?:
     }
   }
 
-  const gitUsername = inputs.gitUsername = getConfig('user.name')
+  const gitUsername = inputs.gitUsername = getGitConfig('user.name')
   if (!gitUsername) {
     questions.push({
       name: 'gitUsername',
       message: 'Your git username',
     })
   }
-  const gitEmail = inputs.gitEmail = getConfig('user.email')
+  const gitEmail = inputs.gitEmail = getGitConfig('user.email')
   if (!gitEmail) {
     questions.push({
       name: 'gitEmail',

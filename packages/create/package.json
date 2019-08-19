@@ -46,6 +46,7 @@
     "@types/node": "^12.7.2",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
     "@typescript-eslint/parser": "^2.0.0",
+    "@unional/createutils": "^1.0.0",
     "clibuilder": "^5.0.1",
     "commitlint-circle": "^1.0.0",
     "dependency-check": "^4.1.0",
