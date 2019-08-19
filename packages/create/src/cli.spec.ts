@@ -12,6 +12,7 @@ test('cli version is current version', () => {
 })
 
 test(`no config will search for 'uni-devpkg'`, async () => {
+  jest.setTimeout(10000)
   const { argv, ui } = setupCliTest(cli, ['list'])
   await cli.parse(argv)
   const message = generateDisplayedMessage(ui.display.infoLogs)
