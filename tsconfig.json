@@ -5,6 +5,9 @@
   ],
   "references": [
     {
+      "path": "packages/createutils/tsconfig.libm.json"
+    },
+    {
       "path": "packages/create/tsconfig.libm.json"
     },
     {
@@ -21,6 +24,9 @@
     },
     {
       "path": "packages/devpkg-node/tsconfig.libm.json"
+    },
+    {
+      "path": "packages/createutils/tsconfig.lib.json"
     },
     {
       "path": "packages/create/tsconfig.lib.json"

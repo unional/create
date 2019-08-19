@@ -1,14 +1,21 @@
 import { Cli } from 'clibuilder'
+import chalk from 'chalk'
 import { pkg } from './pkg'
+import path from 'path'
 
 export const cli = new Cli({
   name: Object.keys(pkg.bin)[0],
   version: pkg.version,
-  commands: [],
-  run(args, argv) {
-    this.ui.info(`cwd`, process.cwd())
-    this.ui.info('args', args)
-    this.ui.info('argv', argv)
-    this.ui.showHelp(this)
+  arguments: [{
+     name: 'project name',
+     required: true,
+  }],
+  run(args) {
+    const projectName = args.packageName
+    const projectPath = path.resolve(projectName)
+
+    this.ui.info(`Creating a new monorepo in ${chalk.green(projectPath)}`)
+
+
   },
 })
