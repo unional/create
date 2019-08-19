@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import updateNotifier from 'update-notifier';
-import { cli } from './cli';
+import {cli} from './cli';
 import { pkg } from './pkg';
 
 // istanbul ignore file
