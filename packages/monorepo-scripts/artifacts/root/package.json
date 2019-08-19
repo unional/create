@@ -12,7 +12,7 @@
     "clean": "lerna run clean",
     "coverage": "jest --coverage",
     "depcheck": "lerna run dependency-check",
-    "lint": "eslint \"**/*.{ts,js}\"",
+    "lint": "eslint \"**/*.{ts,tsx,js,jsx}\"",
     "nuke": "yarn clean && lerna clean -y && rimraf node_modules",
     "release": "lerna publish",
     "test": "jest",
