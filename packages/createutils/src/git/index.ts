@@ -1,3 +1,4 @@
-export * from './getRemote';
-export * from './getRepositoryName';
+export * from './getGitConfig';
+export * from './getGitRemote';
+export * from './getGitRepositoryName';
 export * from './isGitRepo';

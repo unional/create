@@ -1,7 +1,7 @@
 import cp from 'child_process'
 import { isGitRepo } from './isGitRepo';
 
-export function getRemote(cwd = process.cwd()) {
+export function getGitRemote(cwd = process.cwd()) {
   if (!isGitRepo(cwd)) return undefined
 
   try {

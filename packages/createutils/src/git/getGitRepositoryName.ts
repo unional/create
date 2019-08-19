@@ -1,4 +1,4 @@
-export function getRepositoryName(remote: string | undefined) {
+export function getGitRepositoryName(remote: string | undefined) {
   if (remote) {
     return getFromHttpUrl(remote) || getFromSshUrl(remote)
   }

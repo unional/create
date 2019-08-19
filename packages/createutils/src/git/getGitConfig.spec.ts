@@ -2,7 +2,7 @@ import t from 'assert';
 import { exec } from 'child_process';
 import { dirSync } from 'tmp';
 import { promisify } from 'util';
-import { getConfig } from './getConfig';
+import { getGitConfig } from '.';
 
 const execp = promisify(exec)
 test('result is free of newline', async () => {
@@ -10,6 +10,6 @@ test('result is free of newline', async () => {
   const cwd = tmp.name
   await execp('git init', { cwd })
   await execp('git config --add user.name "abc\n"', { cwd })
-  const actual = getConfig('user.name', tmp.name)
+  const actual = getGitConfig('user.name', tmp.name)
   t.strictEqual(actual, 'abc')
 })
