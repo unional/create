@@ -49,7 +49,7 @@ git push
 [semantic-release-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [semantic-release-url]: https://github.com/semantic-release/semantic-release
 [travis-image]: https://img.shields.io/travis/[repository]/master.svg?style=flat
-[travis-url]: https://travis-ci.org/[repository]?branch=master
+[travis-url]: https://travis-ci.com/[repository]?branch=master
 [unstable-image]: https://img.shields.io/badge/stability-unstable-yellow.svg
 [vscode-image]: https://img.shields.io/badge/vscode-ready-green.svg
 [vscode-url]: https://code.visualstudio.com/

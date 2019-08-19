@@ -17,7 +17,7 @@
 [circleci-image]: https://circleci.com/gh/unional/create/tree/master.svg?style=shield
 [circleci-url]: https://circleci.com/gh/unional/create/tree/master
 [travis-image]: https://img.shields.io/travis/unional/create/master.svg?style=flat
-[travis-url]: https://travis-ci.org/unional/create?branch=master
+[travis-url]: https://travis-ci.com/unional/create?branch=master
 [codecov-image]: https://codecov.io/gh/unional/create/branch/master/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/unional/create
 [coveralls-image]: https://coveralls.io/repos/github/unional/create/badge.svg
