@@ -1,6 +1,6 @@
 {
   "name": "@unional/create-monorepo",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "creates and manages monorepo",
   "keywords": [
     "@unional/create",
@@ -39,8 +39,7 @@
     "monorepo-scripts": "lib/bin.js"
   },
   "scripts": {
-    "clean": "rimraf .ts coverage lib libm",
-    "dependency-check": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev"
+    "clean": "rimraf .ts coverage lib libm"
   },
   "dependencies": {
     "@commitlint/cli": "^8.1.0",
@@ -49,6 +48,7 @@
     "@types/node": "^12.7.2",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
     "@typescript-eslint/parser": "^2.0.0",
+    "assertron": "^7.1.2",
     "clibuilder": "^5.0.1",
     "commitlint-circle": "^1.0.0",
     "dependency-check": "^4.1.0",
