@@ -1,8 +1,0 @@
-{
-  "files": [],
-  "exclude": [
-    "packages/*/lib*"
-  ],
-  "references": [
-  ]
-}

@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.libm.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": [
+    "src",
+    "typings"
+  ]
+}

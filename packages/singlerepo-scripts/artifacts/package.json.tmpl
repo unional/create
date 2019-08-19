@@ -1,0 +1,40 @@
+{
+  "name": "{{package-name}}",
+  "version": "0.0.0",
+  "description": "{{description}}",
+  "keywords": [],
+  "homepage": "{{homepage}}",
+  "bugs": {
+    "url": "{{bug-url}}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "{{git-url}}"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "{{author}}",
+    "email": "{{email}}"
+  },
+  "files": [
+    "lib",
+    "libm",
+    "src"
+  ],
+  "scripts": {
+    "build": "yarn build:esnext && yarn build:es5",
+    "build:es5": "tsc -p tsconfig.es5.json",
+    "build:esnext": "tsc -p tsconfig.esnext.json",
+    "build:watch": "tsc --watch",
+    "clean": "rimraf .nyc_output .ts coverage lib libm",
+    "coverage": "jest --coverage",
+    "depcheck": "yarn dependency-check",
+    "dependency-check": "dependency-check . --unused --no-dev -i @types/inquirer -i standard-log-color && dependency-check . --missing --no-dev",
+    "lint": "eslint \"src/**/*.ts\"",
+    "nuke": "yarn clean && rimraf node_modules",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "verify": "yarn lint && yarn build && yarn dependency-check && yarn coverage",
+    "watch": "yarn test:watch"
+  }
+}

@@ -17,6 +17,9 @@
       "path": "packages/monorepo-scripts/tsconfig.libm.json"
     },
     {
+      "path": "packages/singlerepo-scripts/tsconfig.libm.json"
+    },
+    {
       "path": "packages/devpkg-node/tsconfig.libm.json"
     },
     {
@@ -30,6 +33,9 @@
     },
     {
       "path": "packages/monorepo-scripts/tsconfig.lib.json"
+    },
+    {
+      "path": "packages/singlerepo-scripts/tsconfig.lib.json"
     },
     {
       "path": "packages/devpkg-node/tsconfig.lib.json"
