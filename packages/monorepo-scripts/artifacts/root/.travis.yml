@@ -1,0 +1,24 @@
+language: node_js
+cache:
+  directories:
+    - ~/.npm
+  yarn: true
+notifications:
+  email: false
+node_js:
+  - '11'
+branches:
+  only:
+    - master
+    - /^greenkeeper.*$/
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH="$HOME/.yarn/bin:$PATH"
+script:
+  - yarn
+  - yarn lint
+  - yarn build
+  - yarn dc
+  - yarn coverage --maxWorkers=2
+  - ./scripts/run-on-node-version.sh latest "npm install -g codacy-coverage && cat ./coverage/lcov.info | codacy-coverage"
+  - ./scripts/run-on-node-version.sh latest "npm install -g coveralls && cat ./coverage/lcov.info | coveralls"

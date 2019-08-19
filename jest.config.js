@@ -1,4 +1,4 @@
-const common = require('@unional/create-monorepo/config/jest.common')
+const common = require('@unional/monorepo-scripts/config/jest.common')
 
 module.exports = {
   ...common,
