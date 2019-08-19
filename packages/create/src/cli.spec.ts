@@ -1,15 +1,14 @@
 import t from 'assert';
 import { generateDisplayedMessage, setupCliTest } from 'clibuilder';
 import { cli } from './cli';
-import { getVersion } from './version';
+import { pkg } from './pkg';
 
-test('cli name is "uni"', () => {
-  t.strictEqual(cli.name, 'uni')
+test('cli name is "uni-create"', () => {
+  t.strictEqual(cli.name, 'uni-create')
 })
 
 test('cli version is current version', () => {
-  const version = getVersion()
-  t.strictEqual(cli.version, version)
+  t.strictEqual(cli.version, pkg.version)
 })
 
 test(`no config will search for 'uni-devpkg'`, async () => {
