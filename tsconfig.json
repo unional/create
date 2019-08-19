@@ -5,46 +5,46 @@
   ],
   "references": [
     {
-      "path": "packages/createutils/tsconfig.libm.json"
-    },
-    {
-      "path": "packages/create/tsconfig.libm.json"
-    },
-    {
       "path": "packages/dev-scripts/tsconfig.libm.json"
-    },
-    {
-      "path": "packages/create-monorepo/tsconfig.libm.json"
-    },
-    {
-      "path": "packages/monorepo-scripts/tsconfig.libm.json"
-    },
-    {
-      "path": "packages/singlerepo-scripts/tsconfig.libm.json"
-    },
-    {
-      "path": "packages/devpkg-node/tsconfig.libm.json"
-    },
-    {
-      "path": "packages/createutils/tsconfig.lib.json"
-    },
-    {
-      "path": "packages/create/tsconfig.lib.json"
     },
     {
       "path": "packages/dev-scripts/tsconfig.lib.json"
     },
     {
-      "path": "packages/create-monorepo/tsconfig.lib.json"
+      "path": "packages/devpkg-node/tsconfig.libm.json"
     },
     {
-      "path": "packages/monorepo-scripts/tsconfig.lib.json"
+      "path": "packages/devpkg-node/tsconfig.lib.json"
+    },
+    {
+      "path": "packages/singlerepo-scripts/tsconfig.libm.json"
     },
     {
       "path": "packages/singlerepo-scripts/tsconfig.lib.json"
     },
     {
-      "path": "packages/devpkg-node/tsconfig.lib.json"
+      "path": "packages/monorepo-scripts/tsconfig.libm.json"
+    },
+    {
+      "path": "packages/monorepo-scripts/tsconfig.lib.json"
+    },
+    {
+      "path": "packages/createutils/tsconfig.libm.json"
+    },
+    {
+      "path": "packages/createutils/tsconfig.lib.json"
+    },
+    {
+      "path": "packages/create/tsconfig.libm.json"
+    },
+    {
+      "path": "packages/create/tsconfig.lib.json"
+    },
+    {
+      "path": "packages/create-monorepo/tsconfig.libm.json"
+    },
+    {
+      "path": "packages/create-monorepo/tsconfig.lib.json"
     }
   ]
 }
