@@ -2,10 +2,13 @@ import { Cli } from 'clibuilder'
 import { pkg } from './pkg'
 
 export const cli = new Cli({
-  name: 'monorepo-scripts',
+  name: Object.keys(pkg.bin)[0],
   version: pkg.version,
   commands: [],
-  run() {
-    console.info('monorepo-scripts executed')
+  run(args, argv) {
+    this.ui.info(`cwd`, process.cwd())
+    this.ui.info('args', args)
+    this.ui.info('argv', argv)
+    this.ui.showHelp(this)
   },
 })
