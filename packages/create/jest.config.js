@@ -1,5 +1,7 @@
-const base = require('@unional/devpkg-node/simple/config/jest.common')
-module.exports = Object.assign(base, {
+const common = require('@unional/create-monorepo/config/jest.common')
+
+module.exports = {
+  ...common,
   displayName: 'create',
   rootDir: '.',
-})
+}
