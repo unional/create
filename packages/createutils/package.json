@@ -13,7 +13,8 @@
   "license": "MIT",
   "files": [
     "lib",
-    "libm"
+    "libm",
+    "src"
   ],
   "main": "lib/index.js",
   "module": "libm/index.js",

@@ -1,16 +1,18 @@
 {
-  "lerna": "3.8.0",
-  "version": "independent",
-  "npmClient": "yarn",
-  "useWorkspaces": true,
   "command": {
-    "version": {
-      "createRelease": "github"
-    },
     "publish": {
       "conventionalCommits": true,
       "message": "chore(release): publish packages",
       "yes": true
+    },
+    "version": {
+      "createRelease": "github"
     }
-  }
+  },
+  "npmClient": "yarn",
+  "packages": [
+    "packages/*"
+  ],
+  "useWorkspaces": true,
+  "version": "independent"
 }
