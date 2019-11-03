@@ -35,7 +35,7 @@
     "clibuilder": "^5.0.2",
     "dependency-check": "^4.1.0",
     "eslint": "^6.2.0",
-    "eslint-plugin-harmony": "^2.0.4",
+    "eslint-plugin-harmony": "^3.0.0",
     "is-ci": "^2.0.0",
     "jest": "^24.9.0",
     "jest-audio-reporter": "^2.2.1",
