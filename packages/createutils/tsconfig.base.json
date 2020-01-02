@@ -3,10 +3,7 @@
   "compilerOptions": {
     "rootDir": "src"
   },
-  "references": [{
-    "path": "../createutils"
-  }
-  ],
+  "references": [],
   "include": [
     "src",
     "typings"

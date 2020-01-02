@@ -1,7 +1,7 @@
 import t from 'assert';
 import { generateDisplayedMessage, setupCliTest } from 'clibuilder';
 import { cli } from './cli';
-import { pkg } from './pkg';
+import { pkg } from '../pkg';
 
 test('cli name is "uni-create"', () => {
   t.strictEqual(cli.name, 'uni-create')

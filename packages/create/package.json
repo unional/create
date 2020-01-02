@@ -42,14 +42,15 @@
   },
   "dependencies": {
     "@unional/createutils": "^1.0.0",
-    "clibuilder": "^5.0.2",
-    "find-installed-packages": "^2.0.1",
+    "clibuilder": "^5.1.6",
+    "find-installed-packages": "^2.1.4",
     "find-up": "^4.1.0",
-    "iso-error": "^2.3.0",
+    "iso-error": "^3.2.1",
     "ncp": "^2.0.0",
     "ramda": "^0.26.1",
     "search-packages": "^2.0.0",
     "unpartial": "^0.6.3",
-    "update-notifier": "^3.0.1"
+    "update-notifier": "^4.0.0",
+    "validate-npm-package-name": "^3.0.0"
   }
 }

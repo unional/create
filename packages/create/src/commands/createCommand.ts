@@ -1,6 +1,6 @@
 import { CliCommand } from 'clibuilder';
 import { searchByKeywords } from 'search-packages';
-import { CLI_NAME } from '../constants';
+import { CLI_NAME } from '../pkg';
 import { askLanguage, chooseLanguage } from './language';
 
 export const createCommand: CliCommand = {

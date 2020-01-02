@@ -12,5 +12,9 @@
     "resolveJsonModule": true,
     "sourceMap": true,
     "strict": true
-  }
+  },
+  "include": [
+    "src",
+    "typings"
+  ]
 }
