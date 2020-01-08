@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@unional/createutils": "^1.0.0",
-    "clibuilder": "^5.0.2",
+    "clibuilder": "^6.1.7",
     "find-installed-packages": "^2.0.1",
     "find-up": "^4.1.0",
     "iso-error": "^2.3.0",
