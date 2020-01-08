@@ -32,7 +32,7 @@
     "@types/node": "^12.7.2",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
     "@typescript-eslint/parser": "^2.0.0",
-    "clibuilder": "^5.0.2",
+    "clibuilder": "^6.1.7",
     "dependency-check": "^4.1.0",
     "eslint": "^6.2.0",
     "eslint-plugin-harmony": "^2.0.4",
