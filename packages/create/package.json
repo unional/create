@@ -47,7 +47,7 @@
     "find-up": "^4.1.0",
     "iso-error": "^2.3.0",
     "ncp": "^2.0.0",
-    "ramda": "^0.26.1",
+    "ramda": "^0.27.0",
     "search-packages": "^2.0.0",
     "unpartial": "^0.6.3",
     "update-notifier": "^3.0.1"
