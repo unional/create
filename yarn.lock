@@ -1461,12 +1461,12 @@
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha512-f5j5b/Gf71L+dbqxIpQ4Z2WlmI/mPJ0fOkGGmFgtb6sAu97EPczzbS3/tJKxmcYDj55OX6ssqwDAWOHIYDRDGA==
 
-"@types/ramda@^0.26.19":
-  version "0.26.19"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.26.19.tgz#400580597566c016e9743f17c1c48bf4671cda81"
-  integrity sha512-lJuMZDXqZ8W2hl0Gz+wEPUhXcf/tZRuaO5vrxFD3Dv2XMqgTZVw+bvfS6iQAsio9XQV+uhkggtT4eLhDmUpI5g==
+"@types/ramda@^0.27.3":
+  version "0.27.3"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.27.3.tgz#826355839c9da8c153a182f9697ddbe63c67f286"
+  integrity sha512-fUUQsx88sJksuZXh6p11Bl4m1IHwXCez1mgIcbZ7Z4PvUdOqx8rGsqP1zDkixrnMPvupXXrwV1/1/vJEGjSehA==
   dependencies:
-    ts-toolbelt "^3.2.22"
+    ts-toolbelt "^6.3.3"
 
 "@types/semver@^6.0.1":
   version "6.0.1"
@@ -1549,6 +1549,48 @@
   dependencies:
     lodash.unescape "4.0.1"
     semver "^6.2.0"
+
+"@unional/createutils@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@unional/createutils/-/createutils-1.0.0.tgz#50ea38f63fb58a7757508115e492929f27fff972"
+  integrity sha512-37/iF393P6wgFU+y6PeedknatDPPbI6Ge8x78TPvNeTS5YkXObKBVYmLdrFH/CMfHqlhnuI0OOgR+8Gch6BvHg==
+  dependencies:
+    find-up "^4.1.0"
+
+"@unional/monorepo-scripts@^0.0.0":
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/@unional/monorepo-scripts/-/monorepo-scripts-0.0.0.tgz#a3e5817d3a23e14b3e0bad549407a8f7d58b6922"
+  integrity sha512-jEiNGGrcdIlixmKoIjAw7f3sD7DwmknDo3M/4jTV0nC6F3/qonGwuEm9+lpWT7jafImSHV+amVoc9Ssj6+wCKA==
+  dependencies:
+    "@commitlint/cli" "^8.1.0"
+    "@commitlint/config-conventional" "^8.1.0"
+    "@types/jest" "^24.0.17"
+    "@types/node" "^12.7.2"
+    "@typescript-eslint/eslint-plugin" "^2.0.0"
+    "@typescript-eslint/parser" "^2.0.0"
+    assertron "^7.1.2"
+    clibuilder "^5.0.1"
+    commitlint-circle "^1.0.0"
+    dependency-check "^4.1.0"
+    eslint "^6.2.0"
+    eslint-plugin-harmony "^2.0.4"
+    husky "^3.0.4"
+    is-ci "^2.0.0"
+    jest "^24.9.0"
+    jest-audio-reporter "^2.2.1"
+    jest-junit "^7.0.0"
+    jest-progress-tracker "^2.0.2"
+    jest-validate "^24.9.0"
+    jest-watch-repeat "^1.1.3"
+    jest-watch-suspend "^1.1.2"
+    jest-watch-toggle-config "^1.0.2"
+    jest-watch-typeahead "^0.3.1"
+    lerna "^3.16.4"
+    power-assert "^1.6.1"
+    rimraf "^3.0.0"
+    ts-jest "^24.0.2"
+    typescript "^3.5.3"
+    update-notifier "^3.0.1"
 
 "@zkochan/cmd-shim@^3.1.0":
   version "3.1.0"
@@ -7981,10 +8023,10 @@ ts-jest@^24.0.2:
     semver "^5.5"
     yargs-parser "10.x"
 
-ts-toolbelt@^3.2.22:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-3.8.0.tgz#bda726025341a5677d49be04fac536d82dfaaf61"
-  integrity sha512-Gjlx1VZR91Ll7FWT0vnJawC/RH6e4Uj7w6605QaIwC7djhkpR765ju1V+pZiejwjf3JFOzMJi78pZ0mfOzVjMg==
+ts-toolbelt@^6.3.3:
+  version "6.3.9"
+  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-6.3.9.tgz#eb629caf582b0f1f6cbe4515869fc3e79d46058b"
+  integrity sha512-nFT5av4YNp6A9pqn8LaDez59JOH17hJB/+I3/1ilJCzca2R58Tg+gLIEc+ADLAHoW9UJGMEFQa0gq8uekfvNfQ==
 
 tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.10.0"
