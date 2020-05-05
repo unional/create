@@ -45,7 +45,7 @@
     "jest-watch-repeat": "^2.0.0",
     "jest-watch-suspend": "^1.1.2",
     "jest-watch-toggle-config": "^1.0.2",
-    "jest-watch-typeahead": "^0.4.2",
+    "jest-watch-typeahead": "^0.6.0",
     "power-assert": "^1.6.1",
     "rimraf": "^3.0.2",
     "ts-jest": "^25.2.0",
