@@ -1,15 +1,14 @@
 import { promptFolderName, promptCreatePackageConfirmation, promptNpmPackageName, initGitRepo } from '@unional/createutils'
 import chalk from 'chalk'
-import { PluginCli } from 'clibuilder'
+import { createPluginCli } from 'clibuilder'
 import path from 'path'
 import { initCommand, listCommand, searchCommand } from '../commands'
 import { CLI_NAME, version } from '../pkg'
-import { UniConfig } from '../types'
 
-export const cli = new PluginCli<UniConfig>({
+export const cli = createPluginCli({
   name: CLI_NAME,
   version,
-  defaultConfig: { devpkgKeywords: ['uni-devpkg'] },
+  config: { devpkgKeywords: ['uni-devpkg'] },
   commands: [initCommand, listCommand, searchCommand],
   arguments: [{
     name: 'package-name',

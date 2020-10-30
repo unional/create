@@ -1,6 +1,3 @@
 {
-  "extends": "./tsconfig.libm.json",
-  "compilerOptions": {
-    "noEmit": true
-  }
+  "extends": "./tsconfig.libm.json"
 }

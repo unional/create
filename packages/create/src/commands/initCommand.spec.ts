@@ -1,13 +1,13 @@
-import a from 'assertron';
-import { setupCliCommandTest } from 'clibuilder';
-import { initCommand } from './initCommand';
-import { some } from 'satisfier';
+import a from 'assertron'
+import { setupCommandTest } from 'clibuilder'
+import { some } from 'satisfier'
+import { initCommand } from './initCommand'
 
 describe('assert installed dependencies', () => {
   let actualPackages: string[]
 
-  const { cmd, args, argv } = setupCliCommandTest(initCommand, [], undefined, {
-    _dep: {
+  const { cli, argv } = setupCommandTest(initCommand, {
+    context: {
       getInputs: () => Promise.resolve({}),
       copyArtifacts: () => Promise.resolve(),
       initializeFolder: () => Promise.resolve(),
@@ -19,7 +19,7 @@ describe('assert installed dependencies', () => {
   })
 
   beforeAll(async () => {
-    await cmd.run(args, argv)
+    await cli.parse(argv)
   })
 
   test('install @unional/dev as dev dependency', async () => {

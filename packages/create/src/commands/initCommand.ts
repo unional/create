@@ -1,21 +1,12 @@
 /* istanbul ignore file */
-import { getGitConfig, getGitRemote, getGitRepositoryName, isGitRepo } from '@unional/createutils';
-import { CliCommand, Inquirer } from 'clibuilder';
-import { QuestionCollection } from 'inquirer';
-import { unpartial } from 'unpartial';
-import { copyArtifacts } from '../devpkg-io';
-import { initializeFolder } from '../io';
-import { installDev } from '../npm';
-import { UniConfig } from '../types';
+import { getGitConfig, getGitRemote, getGitRepositoryName, isGitRepo } from '@unional/createutils'
+import { createPluginCommand, PromptPresenter } from 'clibuilder'
+import Enquirer from 'enquirer'
+import { copyArtifacts } from '../devpkg-io'
+import { initializeFolder } from '../io'
+import { installDev } from '../npm'
 
-export const initCommand: CliCommand<UniConfig, {
-  _dep: {
-    copyArtifacts: typeof copyArtifacts,
-    getInputs(args: any): Promise<object>,
-    initializeFolder: typeof initializeFolder,
-    installDev: typeof installDev,
-  },
-}> = {
+export const initCommand = createPluginCommand({
   name: 'init',
   description: 'setup an existing repository',
   options: {
@@ -28,24 +19,23 @@ export const initCommand: CliCommand<UniConfig, {
       },
     },
   },
+  context: {
+    copyArtifacts,
+    getInputs,
+    initializeFolder,
+    installDev
+  },
   async run(args) {
-    const dep = unpartial({
-      copyArtifacts,
-      getInputs,
-      initializeFolder,
-      installDev,
-    }, this.context._dep)
-
-    const inputs = await dep.getInputs(this, args as any)
+    const inputs = await this.getInputs(this, args as any)
 
     this.ui.info('Initializing folder...')
-    await dep.initializeFolder(inputs)
+    await this.initializeFolder(inputs)
 
     this.ui.info('Installing @unional/devpkg-node assertron...')
-    await dep.installDev('@unional/devpkg-node', 'assertron')
+    await this.installDev('@unional/devpkg-node', 'assertron')
 
     this.ui.info('Copying files...')
-    await dep.copyArtifacts('@unional/devpkg-node', 'simple')
+    await this.copyArtifacts('@unional/devpkg-node', 'simple')
 
     this.ui.info(`Ready!`)
     this.ui.info(``)
@@ -56,16 +46,17 @@ export const initCommand: CliCommand<UniConfig, {
     this.ui.info(`  optionaly Travis, Coveralls, and Codacy`)
     this.ui.info(`  for Codacy code coverage, add CODACY_PROJECT_TOKEN to Travis env`)
   },
-}
+})
 
-async function getInputs({ ui }: { ui: Inquirer }, args: { name?: string, repo?: string }) {
+async function getInputs({ ui }: { ui: PromptPresenter }, args: { name?: string, repo?: string }) {
   const inputs: any = { year: new Date().getFullYear() }
-  const questions: QuestionCollection[] = []
+  const questions: Enquirer.prompt.Question[] = []
   if (args.name) {
     inputs.name = args.name
   }
   else {
     questions.push({
+      type: 'input',
       name: 'name',
       message: 'The NPM package name',
     })
@@ -84,7 +75,7 @@ async function getInputs({ ui }: { ui: Inquirer }, args: { name?: string, repo?:
     if (!inputs.isGitRepo || inputs.noRemote) {
       questions.push({
         name: 'host',
-        type: 'list',
+        type: 'select',
         choices: [
           { name: 'GitHub', value: 'github.com' },
           { name: 'GitLab', value: 'gitlab.com' },
@@ -92,6 +83,7 @@ async function getInputs({ ui }: { ui: Inquirer }, args: { name?: string, repo?:
         message: 'Select hosting service',
       })
       questions.push({
+        type: 'input',
         name: 'repository',
         message: 'The repository name including organization (e.g. user/repo)',
       })
@@ -101,6 +93,7 @@ async function getInputs({ ui }: { ui: Inquirer }, args: { name?: string, repo?:
   const gitUsername = inputs.gitUsername = getGitConfig('user.name')
   if (!gitUsername) {
     questions.push({
+      type: 'input',
       name: 'gitUsername',
       message: 'Your git username',
     })
@@ -108,6 +101,7 @@ async function getInputs({ ui }: { ui: Inquirer }, args: { name?: string, repo?:
   const gitEmail = inputs.gitEmail = getGitConfig('user.email')
   if (!gitEmail) {
     questions.push({
+      type: 'input',
       name: 'gitEmail',
       message: 'Your git email',
     })

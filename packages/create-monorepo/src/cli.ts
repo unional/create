@@ -1,25 +1,23 @@
-import { initGitRepo } from '@unional/createutils';
-import chalk from 'chalk';
-import { Cli } from 'clibuilder';
-import fs from 'fs';
-import path from 'path';
-import { CLI_NAME } from './constants';
-import { pkg } from './pkg';
-import { assertPackageNameIsValid } from './checkProjectName';
+import { initGitRepo } from '@unional/createutils'
+import chalk from 'chalk'
+import { createCli } from 'clibuilder'
+import fs from 'fs'
+import path from 'path'
+import { assertPackageNameIsValid } from './checkProjectName'
+import { CLI_NAME } from './constants'
+import { pkg } from './pkg'
 
-export const cli = new Cli({
+export const cli = createCli({
   name: CLI_NAME,
   version: pkg.version,
+  description: '',
   arguments: [{
-    name: 'project name',
+    name: 'project-name',
     required: true,
   }],
-  commands: [{
-    name: 'hello',
-    async run() { throw new Error('dsfdsfsdf') },
-  }],
-  async run({ projectName }) {
+  async run(args) {
     try {
+      const projectName = args['project-name']!
       assertPackageNameIsValid(projectName)
       const projectPath = path.resolve(projectName)
 

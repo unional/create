@@ -1,10 +1,11 @@
-import { setupCliCommandTest } from 'clibuilder';
-import { searchCommand } from './searchCommand';
+import { setupCommandTest } from 'clibuilder'
+import { searchCommand } from './searchCommand'
 
 test('if config with devPkgKeywords, that will be used instead', async () => {
   let actual: string[] = []
-  const { cmd, args, argv } = setupCliCommandTest(searchCommand, [], { devpkgKeywords: ['xx'] }, {
-    _dep: {
+  const { cli, argv } = setupCommandTest(searchCommand, {
+    config: { devpkgKeywords: ['xx'] },
+    context: {
       searchByKeywords(keywords: string[]) {
         actual = keywords
         return Promise.resolve([])
@@ -12,23 +13,24 @@ test('if config with devPkgKeywords, that will be used instead', async () => {
     },
   })
 
-  await cmd.run(args, argv)
+  await cli.parse(argv)
 
   expect(actual).toEqual(['xx'])
 })
 
 test('can specify additional keywords to narrow result', async () => {
   let actual: string[] = []
-  const { cmd, args, argv } = setupCliCommandTest(searchCommand, ['a', 'b'], { devpkgKeywords: ['xx'] }, {
-    _dep: {
+  const { cli, argv } = setupCommandTest(searchCommand, {
+    config: { devpkgKeywords: ['xx'] },
+    context: {
       searchByKeywords(keywords: string[]) {
         actual = keywords
         return Promise.resolve(['xx', 'a', 'b'])
       },
     },
-  })
+  }, 'a', 'b')
 
-  await cmd.run(args, argv)
+  await cli.parse(argv)
 
   expect(actual).toEqual(['xx', 'a', 'b'])
 })

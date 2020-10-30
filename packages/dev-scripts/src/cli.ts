@@ -1,5 +1,9 @@
-import { Cli } from 'clibuilder';
-import { CliConfig } from './interfaces';
-import { pkg } from './pkg';
+import { createCli } from 'clibuilder'
+import { pkg } from './pkg'
 
-export const cli = new Cli<CliConfig>({ name: 'uni-dev-scripts', version: pkg.version, commands: [] })
+export const cli = createCli({
+  name: 'uni-dev-scripts',
+  version: pkg.version,
+  config: { keywords: [] as string[] },
+  commands: []
+})

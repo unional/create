@@ -1,13 +1,13 @@
-import { Inquirer, LogPresenter } from 'clibuilder';
+import { PromptPresenter, LogPresenter } from 'clibuilder'
 import validatePackageName from 'validate-npm-package-name'
 import chalk from 'chalk'
-import { showInvalidPackageName } from '../ui';
+import { showInvalidPackageName } from '../ui'
 
 // istanbul ignore next
-export async function promptNpmPackageName({ ui }: { ui: LogPresenter & Inquirer }, { ask, packageName }: { packageName?: string, ask?: boolean }): Promise<string> {
+export async function promptNpmPackageName({ ui }: { ui: LogPresenter & PromptPresenter }, { ask, packageName }: { packageName?: string, ask?: boolean }): Promise<string> {
   if (!ask && packageName) return packageName
 
-  return ui.prompt({
+  return ui.prompt([{
     type: 'input',
     name: 'packageName',
     message: `${chalk.green('npm')} package name:`,
@@ -19,6 +19,6 @@ export async function promptNpmPackageName({ ui }: { ui: LogPresenter & Inquirer
 
       return validForNewPackages
     },
-    default: packageName
-  }).then(({ packageName }) => packageName)
+    initial: packageName
+  }]).then(({ packageName }) => packageName)
 }

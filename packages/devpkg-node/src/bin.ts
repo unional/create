@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-import updateNotifier from 'update-notifier';
-import { cli } from './cli';
-import { pkg } from './pkg';
+import updateNotifier from 'update-notifier'
+import { cli } from './cli'
+import { pkg } from './pkg'
 
 
-updateNotifier({ pkg }).notify();
+updateNotifier({ pkg }).notify()
 
 cli.parse(process.argv)
-  .catch(err => {
+  .catch((err: unknown) => {
     console.error(err)
   })

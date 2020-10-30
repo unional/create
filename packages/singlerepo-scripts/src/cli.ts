@@ -1,7 +1,7 @@
-import { Cli } from 'clibuilder'
+import { createCli } from 'clibuilder'
 import { pkg } from './pkg'
 
-export const cli = new Cli({
+export const cli = createCli({
   name: Object.keys(pkg.bin)[0],
   version: pkg.version,
   commands: [],

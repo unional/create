@@ -1,12 +1,14 @@
-import chalk from 'chalk';
-import { generateDisplayedMessage, setupCliCommandTest } from 'clibuilder';
-import { initCommand } from './initCommand';
+import chalk from 'chalk'
+import { generateDisplayedMessage, setupCommandTest } from 'clibuilder'
+import { initCommand } from './initCommand'
 
 test('No plugins installed should show error message', async () => {
-  const { cmd, args, argv, ui } = setupCliCommandTest(initCommand, [], { keywords: ['some-key'] })
-  cmd.context.cwd = 'fixtures/no-plugins'
+  const { cli, argv, ui } = setupCommandTest(initCommand, {
+    config: { keywords: ['some-key'] },
+    context: { cwd: 'fixtures/no-plugins' }
+  })
 
-  await cmd.run(args, argv)
+  await cli.parse(argv)
   const message = generateDisplayedMessage(ui.display.errorLogs)
   expect(message).toEqual(`
 Could not locate any installed plugin.

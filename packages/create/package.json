@@ -27,30 +27,28 @@
     "url": "https://github.com/unional/create.git"
   },
   "license": "MIT",
+  "bin": {
+    "uni-create": "lib/bin.js"
+  },
   "files": [
     "artifacts",
     "config",
     "lib",
     "libm"
   ],
-  "bin": {
-    "uni-create": "lib/bin.js"
-  },
   "scripts": {
     "clean": "rimraf .ts coverage lib libm",
     "dependency-check": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev"
   },
   "dependencies": {
     "@unional/createutils": "^1.0.0",
-    "clibuilder": "^5.1.6",
-    "find-installed-packages": "^2.1.4",
-    "find-up": "^4.1.0",
-    "iso-error": "^3.2.1",
+    "chalk": "^4.1.0",
+    "clibuilder": "^6.4.4",
+    "find-installed-packages": "^2.1.6",
+    "iso-error": "^3.2.5",
     "ncp": "^2.0.0",
-    "ramda": "^0.26.1",
-    "search-packages": "^2.0.0",
-    "unpartial": "^0.6.3",
-    "update-notifier": "^4.0.0",
-    "validate-npm-package-name": "^3.0.0"
+    "ramda": "^0.27.1",
+    "search-packages": "^2.1.0",
+    "update-notifier": "^5.0.0"
   }
 }

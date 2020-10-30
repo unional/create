@@ -1,9 +1,9 @@
-import { CliCommand } from 'clibuilder';
-import { searchByKeywords } from 'search-packages';
-import { CLI_NAME } from '../pkg';
-import { askLanguage, chooseLanguage } from './language';
+import { createPluginCommand } from 'clibuilder'
+import { searchByKeywords } from 'search-packages'
+import { CLI_NAME } from '../pkg'
+import { askLanguage, chooseLanguage } from './language'
 
-export const createCommand: CliCommand = {
+export const createCommand = createPluginCommand({
   name: 'create',
   description: 'Create a new project',
   arguments: [{
@@ -21,4 +21,4 @@ export const createCommand: CliCommand = {
       }
     }
   },
-}
+})
