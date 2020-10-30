@@ -1,11 +1,5 @@
 const isCI = require('is-ci')
 module.exports = isCI ? {
-  'preset': 'ts-jest',
-  'globals': {
-    'ts-jest': {
-      'diagnostics': false,
-    },
-  },
   'collectCoverageFrom': [
     '<rootDir>/src/**/*.[jt]s',
     '!<rootDir>/src/bin.[jt]s',
@@ -25,12 +19,6 @@ module.exports = isCI ? {
   'testEnvironment': 'node',
   'testMatch': ['**/?(*.)+(spec|test|integrate|accept|system|unit).[jt]s?(x)'],
 } : {
-    'preset': 'ts-jest',
-    'globals': {
-      'ts-jest': {
-        'diagnostics': false,
-      },
-    },
     'collectCoverageFrom': [
       '<rootDir>/src/**/*.[jt]s',
       '!<rootDir>/src/bin.[jt]s',
@@ -39,9 +27,6 @@ module.exports = isCI ? {
       'default',
       'jest-progress-tracker',
       ['jest-audio-reporter', { volume: 0.3 }],
-    ],
-    'roots': [
-      '<rootDir>/src',
     ],
     'testEnvironment': 'node',
     'testMatch': ['**/?(*.)+(spec|test|integrate|accept|system|unit).[jt]s?(x)'],

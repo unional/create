@@ -1,0 +1,18 @@
+{
+  "extends": "plugin:harmony/latest",
+  "root": true,
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "extends": "plugin:harmony/ts-recommended"
+    }
+  ]
+}
