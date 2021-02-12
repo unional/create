@@ -42,11 +42,13 @@
     "babel-jest": "^26",
     "codacy-coverage": "^3.4.0",
     "codecov": "^3.8.1",
+    "global-store": "1.0.0-beta.17",
     "husky": "^5.0.9",
     "npm-check-updates": "^11.1.1",
     "rimraf": "^3.0.2",
+    "semantic-release": "^17.3.8",
     "tmp": "^0.2.1",
-    "semantic-release": "^17.3.8"
+    "typescript": "^4.1.5"
   },
   "version": "0.0.0-development",
   "repository": {
