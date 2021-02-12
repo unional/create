@@ -26,18 +26,19 @@
     }
   },
   "devDependencies": {
-    "@babel/core": "^7.12.3",
-    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.12.1",
-    "@babel/plugin-proposal-optional-chaining": "^7.12.1",
-    "@babel/preset-env": "^7.12.1",
-    "@babel/preset-typescript": "^7.12.1",
+    "@babel/core": "^7.12.16",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.12.13",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-typescript": "^7.12.16",
     "@types/ncp": "^2.0.4",
-    "@types/ramda": "^0.27.31",
+    "@types/ramda": "^0.27.38",
     "@types/tmp": "^0.2.0",
     "@types/update-notifier": "^5.0.0",
     "@unional/monorepo-scripts": "^0.0.0",
-    "babel-jest": "^24",
-    "npm-check-updates": "^9.2.3",
+    "babel-jest": "^26",
+    "husky": "^5.0.9",
+    "npm-check-updates": "^11.1.1",
     "tmp": "^0.2.1"
   }
 }

@@ -45,9 +45,9 @@
   "dependencies": {
     "@unional/createutils": "^1.0.0",
     "chalk": "^4.1.0",
-    "clibuilder": "^6.4.4",
+    "clibuilder": "^6.5.1",
     "iso-error": "^3.2.5",
-    "update-notifier": "^5.0.0",
+    "update-notifier": "^5.1.0",
     "validate-npm-package-name": "^3.0.0"
   }
 }

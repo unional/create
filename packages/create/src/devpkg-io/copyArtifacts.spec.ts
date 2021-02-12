@@ -1,8 +1,9 @@
-import t from 'assert';
-import a from 'assertron';
-import fs from 'fs';
-import { dirSync } from 'tmp';
-import { copyArtifacts, FolderNotFoundInPackage, PackageNotFound } from '.';
+import t from 'assert'
+import a from 'assertron'
+import fs from 'fs'
+import { pathEqual } from 'path-equal'
+import { dirSync } from 'tmp'
+import { copyArtifacts, FolderNotFoundInPackage, PackageNotFound } from '.'
 
 test('not exist package throws PackageNotFound', async () => {
   const err = await a.throws(() => copyArtifacts('not-exist-package', 'something'), PackageNotFound)
@@ -14,7 +15,7 @@ test.only('not exist directory throws FolderNotFoundInPackage', async () => {
   const err = await a.throws(() => copyArtifacts('@unional/devpkg-node', 'not-exist'), FolderNotFoundInPackage)
 
   t.strictEqual(err.packageName, '@unional/devpkg-node')
-  t.strictEqual(err.folder, 'not-exist/artifacts')
+  expect(pathEqual(err.folder, 'not-exist/artifacts')).toBe(true)
 })
 
 test('copy files to cwd', async () => {

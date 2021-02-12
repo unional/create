@@ -43,12 +43,12 @@
   "dependencies": {
     "@unional/createutils": "^1.0.0",
     "chalk": "^4.1.0",
-    "clibuilder": "^6.4.4",
+    "clibuilder": "^6.5.1",
     "find-installed-packages": "^2.1.6",
     "iso-error": "^3.2.5",
     "ncp": "^2.0.0",
     "ramda": "^0.27.1",
     "search-packages": "^2.1.0",
-    "update-notifier": "^5.0.0"
+    "update-notifier": "^5.1.0"
   }
 }
