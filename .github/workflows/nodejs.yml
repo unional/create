@@ -121,6 +121,7 @@ jobs:
       #       npm whoami
       #   env:
       #       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: npm whoami
       - run: yarn lerna publish --yes
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
