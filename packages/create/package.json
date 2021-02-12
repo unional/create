@@ -1,6 +1,6 @@
 {
   "name": "@unional/create",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "creates and manage repositories",
   "keywords": [
     "@unional/create",
@@ -41,7 +41,7 @@
     "dependency-check": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev"
   },
   "dependencies": {
-    "@unional/createutils": "^1.1.1",
+    "@unional/createutils": "^1.1.2",
     "chalk": "^4.1.0",
     "clibuilder": "^6.5.1",
     "find-installed-packages": "^2.1.6",

@@ -1,6 +1,6 @@
 {
   "name": "@unional/create-monorepo",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "creates and manages monorepo",
   "keywords": [
     "@unional/create",
@@ -43,7 +43,7 @@
     "dependency-check": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev"
   },
   "dependencies": {
-    "@unional/createutils": "^1.1.1",
+    "@unional/createutils": "^1.1.2",
     "chalk": "^4.1.0",
     "clibuilder": "^6.5.1",
     "iso-error": "^3.2.5",
