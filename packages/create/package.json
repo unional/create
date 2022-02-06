@@ -47,7 +47,7 @@
     "find-installed-packages": "^2.1.6",
     "iso-error": "^3.2.5",
     "ncp": "^2.0.0",
-    "ramda": "^0.27.1",
+    "ramda": "^0.28.0",
     "search-packages": "^2.1.0",
     "update-notifier": "^5.1.0"
   }
