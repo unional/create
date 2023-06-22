@@ -49,6 +49,6 @@
     "ncp": "^2.0.0",
     "ramda": "^0.27.1",
     "search-packages": "^2.1.0",
-    "update-notifier": "^5.1.0"
+    "update-notifier": "^6.0.0"
   }
 }
