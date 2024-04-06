@@ -50,7 +50,7 @@
     "clibuilder": "^6.5.1",
     "commitlint-circle": "^1.0.0",
     "dependency-check": "^4.1.0",
-    "eslint": "^7.19.0",
+    "eslint": "^9.0.0",
     "eslint-plugin-harmony": "^5.0.1",
     "husky": "^5.0.9",
     "is-ci": "^2.0.0",
