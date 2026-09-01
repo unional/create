@@ -18,13 +18,13 @@
     "travis",
     "typescript"
   ],
-  "homepage": "https://github.com/unional/create/tree/master/packages/create",
+  "homepage": "https://github.com/cyberuni/create/tree/main/packages/create",
   "bugs": {
-    "url": "https://github.com/unional/create/issues"
+    "url": "https://github.com/cyberuni/create/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/unional/create.git"
+    "url": "https://github.com/cyberuni/create.git"
   },
   "license": "MIT",
   "bin": {
@@ -41,7 +41,7 @@
     "dependency-check": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev"
   },
   "dependencies": {
-    "@unional/createutils": "^1.1.2",
+    "@unional/createutils": "workspace:^",
     "chalk": "^4.1.0",
     "clibuilder": "^6.5.1",
     "find-installed-packages": "^2.1.6",
@@ -50,5 +50,6 @@
     "ramda": "^0.27.1",
     "search-packages": "^2.1.0",
     "update-notifier": "^5.1.0"
-  }
+  },
+  "private": true
 }

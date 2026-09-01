@@ -1,32 +1,36 @@
 {
   "name": "root",
+  "version": "0.0.0-development",
   "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
+  "description": "@unional repository creation and management tools",
+  "homepage": "https://github.com/cyberuni/create",
+  "bugs": {
+    "url": "https://github.com/cyberuni/create/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyberuni/create.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Homa Wong",
+    "email": "homawong@gmail.com"
   },
   "scripts": {
     "build": "tsc -b",
     "build:watch": "tsc -b -w",
-    "bundle": "lerna run bundle",
-    "clean": "lerna run clean && rimraf .tsbuildinfo",
-    "codacy": "cat coverage/lcov.info | codacy-coverage",
+    "clean": "pnpm -r run clean && rimraf .tsbuildinfo",
     "coverage": "jest --coverage",
-    "depcheck": "lerna run dependency-check",
+    "cs": "changeset",
+    "depcheck": "pnpm -r run dependency-check",
     "lint": "eslint --ext=js,jsx,ts,tsx .",
-    "nuke": "yarn clean && lerna clean -y && rimraf node_modules",
+    "nuke": "pnpm clean && rimraf node_modules",
+    "release": "changeset publish",
     "test": "jest",
-    "test:nodejs": "jest",
     "test:watch": "jest --watch",
-    "verify": "yarn lint && yarn build && yarn depcheck && yarn coverage",
-    "watch": "yarn test:watch",
-    "semantic-release": "semantic-release"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "verify": "pnpm lint && pnpm build && pnpm depcheck && pnpm coverage",
+    "version": "changeset version",
+    "watch": "pnpm test:watch"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -34,25 +38,30 @@
     "@babel/plugin-proposal-optional-chaining": "^7.12.16",
     "@babel/preset-env": "^7.12.16",
     "@babel/preset-typescript": "^7.12.16",
+    "@changesets/cli": "^3.0.0",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@types/jest": "^26.0.20",
     "@types/ncp": "^2.0.4",
+    "@types/node": "^14.14.26",
     "@types/ramda": "^0.27.38",
     "@types/tmp": "^0.2.0",
     "@types/update-notifier": "^5.0.0",
-    "@unional/monorepo-scripts": "^0.0.0",
     "babel-jest": "^26",
-    "codacy-coverage": "^3.4.0",
-    "codecov": "^3.8.1",
+    "dependency-check": "^4.1.0",
+    "eslint": "^7.19.0",
+    "eslint-plugin-harmony": "^5.0.1",
     "global-store": "1.0.0-beta.17",
-    "husky": "^5.0.9",
-    "npm-check-updates": "^11.1.1",
+    "jest": "^26.6.3",
+    "jest-audio-reporter": "^2.2.1",
+    "jest-progress-tracker": "^2.0.2",
+    "jest-watch-repeat": "^2.0.0",
+    "jest-watch-suspend": "^1.1.2",
+    "jest-watch-toggle-config": "^2.0.1",
+    "jest-watch-typeahead": "^0.6.1",
     "rimraf": "^3.0.2",
-    "semantic-release": "^17.3.8",
     "tmp": "^0.2.1",
-    "typescript": "^4.1.5"
+    "typescript": "~4.1.5"
   },
-  "version": "0.0.0-development",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/unional/create.git"
-  }
+  "packageManager": "pnpm@11.20.0"
 }

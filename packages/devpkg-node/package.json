@@ -9,13 +9,13 @@
     "nodejs",
     "typescript"
   ],
-  "homepage": "https://github.com/unional/create",
+  "homepage": "https://github.com/cyberuni/create",
   "bugs": {
-    "url": "https://github.com/unional/create/issues"
+    "url": "https://github.com/cyberuni/create/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/unional/create.git"
+    "url": "https://github.com/cyberuni/create.git"
   },
   "license": "MIT",
   "bin": {

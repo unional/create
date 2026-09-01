@@ -1,6 +1,7 @@
 {
   "name": "@unional/create-monorepo",
   "version": "0.2.2",
+  "private": true,
   "description": "creates and manages monorepo",
   "keywords": [
     "@unional/create",
@@ -20,13 +21,13 @@
     "travis",
     "typescript"
   ],
-  "homepage": "https://github.com/unional/create/tree/master/packages/create-monorepo",
+  "homepage": "https://github.com/cyberuni/create/tree/main/packages/create-monorepo",
   "bugs": {
-    "url": "https://github.com/unional/create/issues"
+    "url": "https://github.com/cyberuni/create/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/unional/create.git"
+    "url": "https://github.com/cyberuni/create.git"
   },
   "license": "MIT",
   "files": [
@@ -43,7 +44,7 @@
     "dependency-check": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev"
   },
   "dependencies": {
-    "@unional/createutils": "^1.1.2",
+    "@unional/createutils": "workspace:^",
     "chalk": "^4.1.0",
     "clibuilder": "^6.5.1",
     "iso-error": "^3.2.5",

@@ -2,19 +2,20 @@
   "name": "@unional/createutils",
   "version": "1.1.2",
   "description": "utilities for create projects",
-  "homepage": "https://github.com/unional/create/tree/master/packages/createutils",
+  "homepage": "https://github.com/cyberuni/create/tree/main/packages/createutils",
   "bugs": {
-    "url": "https://github.com/unional/create/issues"
+    "url": "https://github.com/cyberuni/create/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/unional/create.git"
+    "url": "https://github.com/cyberuni/create.git"
   },
   "license": "MIT",
   "files": [
     "lib",
     "libm",
-    "src"
+    "src",
+    "!**/*.{spec,test,unit,accept,integrate,system,perf,stress,study,stories}.*"
   ],
   "main": "lib/index.js",
   "module": "libm/index.js",
@@ -30,5 +31,8 @@
     "find-up": "^5.0.0",
     "valid-filename": "^3.1.0",
     "validate-npm-package-name": "^3.0.0"
+  },
+  "devDependencies": {
+    "clibuilder": "^6.5.1"
   }
 }

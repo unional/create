@@ -1,0 +1,28 @@
+packages:
+  - packages/*
+
+# Every one of these is a postinstall we do not need: `core-js` and `nx` only print
+# donation/telemetry banners, and `@parcel/watcher` builds a native watcher that
+# nothing in this repo watches. Omitting an entry re-triggers ERR_PNPM_IGNORED_BUILDS,
+# so they are listed explicitly as `false` rather than left out.
+allowBuilds:
+  '@parcel/watcher': false
+  core-js: false
+  nx: false
+
+# Restores exactly what the deleted `yarn.lock` had resolved. These are floating `^`
+# ranges in package.json that have drifted since the last release in 2021:
+#   clibuilder 6.6.1 dropped `PromptPresenter`, `createCli` and `createPluginCommand`
+#   @types/update-notifier 5.1.0 broke its own ConfigStore typing (TS2709)
+# Pinned here rather than by narrowing the published `dependencies` ranges, so the
+# packages' own metadata is unchanged by this release-plumbing PR. Lifting either pin
+# is toolchain work, not sweep work.
+overrides:
+  '@types/ramda': 0.27.38
+  '@types/update-notifier': 5.0.0
+  ansi-colors: 4.1.1
+  clibuilder: 6.5.1
+  configstore: 5.0.1
+  find-installed-packages: 2.1.6
+  iso-error: 3.2.5
+  search-packages: 2.1.0
