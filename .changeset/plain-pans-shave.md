@@ -1,5 +1,4 @@
 ---
-'@unional/create-monorepo': patch
 '@unional/monorepo-scripts': patch
 '@unional/createutils': patch
 '@unional/devpkg-node': patch
