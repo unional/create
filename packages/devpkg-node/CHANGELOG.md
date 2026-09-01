@@ -1,5 +1,13 @@
 # @unional/devpkg-node
 
+## 1.6.3
+
+### Patch Changes
+
+- 17b668c: Release through npm trusted publishing.
+  
+  The release pipeline moved from lerna + a repo `NPM_TOKEN` to changesets publishing over GitHub OIDC, so these packages are published with provenance and no long-lived credential. `@unional/createutils` also stops shipping its own `*.spec.ts` files.
+
 ## 1.6.2 (2021-02-12)
 
 **Note:** Version bump only for package @unional/devpkg-node

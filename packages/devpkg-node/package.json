@@ -1,6 +1,6 @@
 {
   "name": "@unional/devpkg-node",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "Development package for NodeJS development",
   "keywords": [
     "@unional/create",
