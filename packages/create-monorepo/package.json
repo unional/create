@@ -1,6 +1,7 @@
 {
   "name": "@unional/create-monorepo",
   "version": "0.2.2",
+  "private": true,
   "description": "creates and manages monorepo",
   "keywords": [
     "@unional/create",
