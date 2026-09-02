@@ -1,34 +1,34 @@
-import t from 'assert'
+import t from 'node:assert'
+import fs from 'node:fs'
 import a from 'assertron'
-import fs from 'fs'
 import { pathEqual } from 'path-equal'
 import { dirSync } from 'tmp'
 import { copyArtifacts, FolderNotFoundInPackage, PackageNotFound } from '.'
 
 test('not exist package throws PackageNotFound', async () => {
-  const err = await a.throws(() => copyArtifacts('not-exist-package', 'something'), PackageNotFound)
+	const err = await a.throws(() => copyArtifacts('not-exist-package', 'something'), PackageNotFound)
 
-  t.strictEqual(err.packageName, 'not-exist-package')
+	t.strictEqual(err.packageName, 'not-exist-package')
 })
 
 test.only('not exist directory throws FolderNotFoundInPackage', async () => {
-  const err = await a.throws(() => copyArtifacts('@unional/devpkg-node', 'not-exist'), FolderNotFoundInPackage)
+	const err = await a.throws(() => copyArtifacts('@unional/devpkg-node', 'not-exist'), FolderNotFoundInPackage)
 
-  t.strictEqual(err.packageName, '@unional/devpkg-node')
-  expect(pathEqual(err.folder, 'not-exist/artifacts')).toBe(true)
+	t.strictEqual(err.packageName, '@unional/devpkg-node')
+	expect(pathEqual(err.folder, 'not-exist/artifacts')).toBe(true)
 })
 
 test('copy files to cwd', async () => {
-  const tmp = dirSync()
-  await copyArtifacts('@unional/devpkg-node', 'simple', tmp.name)
-  const dirs = fs.readdirSync(tmp.name)
-  t(dirs.length > 0, 'cwd is empty')
+	const tmp = dirSync()
+	await copyArtifacts('@unional/devpkg-node', 'simple', tmp.name)
+	const dirs = fs.readdirSync(tmp.name)
+	t(dirs.length > 0, 'cwd is empty')
 })
 
 test('_gitignore is renamed to .gitignore', async () => {
-  const tmp = dirSync()
-  await copyArtifacts('@unional/devpkg-node', 'simple', tmp.name)
-  const dirs = fs.readdirSync(tmp.name)
-  t.strictEqual(dirs.indexOf('_gitignore'), -1)
-  t(dirs.indexOf('.gitignore') > 0)
+	const tmp = dirSync()
+	await copyArtifacts('@unional/devpkg-node', 'simple', tmp.name)
+	const dirs = fs.readdirSync(tmp.name)
+	t.strictEqual(dirs.indexOf('_gitignore'), -1)
+	t(dirs.indexOf('.gitignore') > 0)
 })

@@ -1,67 +1,54 @@
 {
-  "name": "root",
-  "version": "0.0.0-development",
-  "private": true,
-  "description": "@unional repository creation and management tools",
-  "homepage": "https://github.com/cyberuni/create",
-  "bugs": {
-    "url": "https://github.com/cyberuni/create/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cyberuni/create.git"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "Homa Wong",
-    "email": "homawong@gmail.com"
-  },
-  "scripts": {
-    "build": "tsc -b",
-    "build:watch": "tsc -b -w",
-    "clean": "pnpm -r run clean && rimraf .tsbuildinfo",
-    "coverage": "jest --coverage",
-    "cs": "changeset",
-    "depcheck": "pnpm -r run dependency-check",
-    "lint": "eslint --ext=js,jsx,ts,tsx .",
-    "nuke": "pnpm clean && rimraf node_modules",
-    "release": "changeset publish",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "verify": "pnpm lint && pnpm build && pnpm depcheck && pnpm coverage",
-    "version": "changeset version",
-    "watch": "pnpm test:watch"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.12.13",
-    "@babel/plugin-proposal-optional-chaining": "^7.12.16",
-    "@babel/preset-env": "^7.12.16",
-    "@babel/preset-typescript": "^7.12.16",
-    "@changesets/cli": "^3.0.0",
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "@types/jest": "^26.0.20",
-    "@types/ncp": "^2.0.4",
-    "@types/node": "^14.14.26",
-    "@types/ramda": "^0.27.38",
-    "@types/tmp": "^0.2.0",
-    "@types/update-notifier": "^5.0.0",
-    "babel-jest": "^26",
-    "dependency-check": "^4.1.0",
-    "eslint": "^7.19.0",
-    "eslint-plugin-harmony": "^5.0.1",
-    "global-store": "1.0.0-beta.17",
-    "jest": "^26.6.3",
-    "jest-audio-reporter": "^2.2.1",
-    "jest-progress-tracker": "^2.0.2",
-    "jest-watch-repeat": "^2.0.0",
-    "jest-watch-suspend": "^1.1.2",
-    "jest-watch-toggle-config": "^2.0.1",
-    "jest-watch-typeahead": "^0.6.1",
-    "rimraf": "^3.0.2",
-    "tmp": "^0.2.1",
-    "typescript": "~4.1.5"
-  },
-  "packageManager": "pnpm@11.20.0"
+	"name": "root",
+	"version": "0.0.0-development",
+	"private": true,
+	"description": "@unional repository creation and management tools",
+	"homepage": "https://github.com/cyberuni/create",
+	"bugs": {
+		"url": "https://github.com/cyberuni/create/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/cyberuni/create.git"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Homa Wong",
+		"email": "homawong@gmail.com"
+	},
+	"scripts": {
+		"build": "tsc -b",
+		"build:watch": "tsc -b -w",
+		"clean": "pnpm -r run clean && rimraf .tsbuildinfo",
+		"coverage": "vitest run --coverage",
+		"cs": "changeset",
+		"lint": "biome ci .",
+		"lint:fix": "biome check --write .",
+		"nuke": "pnpm clean && rimraf node_modules",
+		"release": "changeset publish",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"verify": "pnpm lint && pnpm build && pnpm coverage",
+		"version": "changeset version",
+		"watch": "pnpm test:watch"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.11",
+		"@changesets/cli": "^3.0.0",
+		"@commitlint/cli": "^11.0.0",
+		"@commitlint/config-conventional": "^11.0.0",
+		"@repobuddy/biome": "^2.3.1",
+		"@types/ncp": "^2.0.4",
+		"@types/node": "^24.0.0",
+		"@types/ramda": "^0.27.38",
+		"@types/tmp": "^0.2.0",
+		"@types/update-notifier": "^5.0.0",
+		"@vitest/coverage-v8": "^4.1.11",
+		"global-store": "1.0.0-beta.17",
+		"rimraf": "^6.0.0",
+		"tmp": "^0.2.1",
+		"typescript": "~7.0.2",
+		"vitest": "^4.1.11"
+	},
+	"packageManager": "pnpm@11.20.0"
 }

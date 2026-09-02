@@ -1,1 +1,1 @@
-export * from './initializeFolder';
+export * from './initializeFolder'

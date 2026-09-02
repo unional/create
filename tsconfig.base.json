@@ -1,21 +1,17 @@
 {
-  "compilerOptions": {
-    "esModuleInterop": true,
-    "lib": [
-      "es2015"
-    ],
-    "moduleResolution": "node",
-    "newLine": "LF",
-    "noUnusedLocals": true,
-    "outDir": ".nowhere",
-    "removeComments": false,
-    "resolveJsonModule": true,
-    "sourceMap": true,
-    "strict": true,
-    "skipLibCheck": true
-  },
-  "include": [
-    "src",
-    "typings"
-  ]
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"lib": ["es2022"],
+		"moduleResolution": "node16",
+		"newLine": "LF",
+		"noUnusedLocals": true,
+		"outDir": ".nowhere",
+		"removeComments": false,
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"strict": true,
+		"skipLibCheck": true,
+		"types": ["node"]
+	},
+	"include": ["src", "typings"]
 }
