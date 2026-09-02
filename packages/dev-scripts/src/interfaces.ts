@@ -1,3 +1,3 @@
 export type CliConfig = {
-  keywords: string[],
+	keywords: string[]
 }

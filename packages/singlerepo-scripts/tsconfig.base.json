@@ -1,12 +1,8 @@
 {
-  "extends": "../../tsconfig.setting.json",
-  "compilerOptions": {
-    "rootDir": "src"
-  },
-  "references": [
-  ],
-  "include": [
-    "src",
-    "typings"
-  ]
+	"extends": "../../tsconfig.setting.json",
+	"compilerOptions": {
+		"rootDir": "src"
+	},
+	"references": [],
+	"include": ["src", "typings"]
 }

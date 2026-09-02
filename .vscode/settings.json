@@ -1,11 +1,4 @@
 {
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.words": [
-    "depcheck",
-    "greenkeeper",
-    "lerna",
-    "macos",
-    "npmjs",
-    "npmrc"
-  ]
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"cSpell.words": ["depcheck", "greenkeeper", "lerna", "macos", "npmjs", "npmrc"]
 }

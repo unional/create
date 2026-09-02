@@ -1,28 +1,27 @@
 {
-  "name": "@unional/dev-scripts",
-  "version": "0.1.2",
-  "description": "Development scripts",
-  "homepage": "https://github.com/cyberuni/create",
-  "bugs": {
-    "url": "https://github.com/cyberuni/create/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cyberuni/create.git"
-  },
-  "license": "MIT",
-  "bin": {
-    "dev-scripts": "lib/bin.js"
-  },
-  "scripts": {
-    "clean": "rimraf .ts coverage lib libm",
-    "dependency-check": "dependency-check . --unused --no-dev -i chalk -i find-installed-packages && dependency-check . --missing --no-dev"
-  },
-  "dependencies": {
-    "clibuilder": "^6.5.1",
-    "update-notifier": "^5.1.0",
-    "chalk": "^4.1.0",
-    "find-installed-packages": "^2.1.6"
-  },
-  "private": true
+	"name": "@unional/dev-scripts",
+	"version": "0.1.2",
+	"description": "Development scripts",
+	"homepage": "https://github.com/cyberuni/create",
+	"bugs": {
+		"url": "https://github.com/cyberuni/create/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/cyberuni/create.git"
+	},
+	"license": "MIT",
+	"bin": {
+		"dev-scripts": "lib/bin.js"
+	},
+	"scripts": {
+		"clean": "rimraf .ts coverage lib libm"
+	},
+	"dependencies": {
+		"clibuilder": "^6.5.1",
+		"update-notifier": "^5.1.0",
+		"chalk": "^4.1.0",
+		"find-installed-packages": "^2.1.6"
+	},
+	"private": true
 }

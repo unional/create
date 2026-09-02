@@ -1,12 +1,11 @@
 {
-  "extends": "./tsconfig.base.json",
-  "compilerOptions": {
-    "module": "esnext",
-    "outDir": "libm",
-    "target": "esnext",
-    "tsBuildInfoFile": ".ts/esnext.buildinfo"
-  },
-  "exclude": [
-    "src/**/*.spec.ts"
-  ]
+	"extends": "./tsconfig.base.json",
+	"compilerOptions": {
+		"module": "esnext",
+		"outDir": "libm",
+		"target": "es2022",
+		"tsBuildInfoFile": ".ts/esnext.buildinfo",
+		"moduleResolution": "bundler"
+	},
+	"exclude": ["src/**/*.spec.ts"]
 }

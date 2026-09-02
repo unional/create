@@ -4,6 +4,11 @@ on:
     types: [opened, synchronize]
   merge_group:
 
+# Least privilege at the workflow level; the reusable workflow raises what it needs
+# per job (actions/missing-workflow-permissions).
+permissions:
+  contents: read
+
 jobs:
   code:
     uses: cyberuni/.github/.github/workflows/pnpm-verify.yml@v2

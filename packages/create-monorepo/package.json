@@ -1,54 +1,53 @@
 {
-  "name": "@unional/create-monorepo",
-  "version": "0.2.2",
-  "private": true,
-  "description": "creates and manages monorepo",
-  "keywords": [
-    "@unional/create",
-    "circleci",
-    "codacy",
-    "codecov",
-    "commitlint",
-    "coveralls",
-    "eslint",
-    "github",
-    "github-actions",
-    "greenkeeper",
-    "jest",
-    "lerna",
-    "monorepo",
-    "nodejs",
-    "travis",
-    "typescript"
-  ],
-  "homepage": "https://github.com/cyberuni/create/tree/main/packages/create-monorepo",
-  "bugs": {
-    "url": "https://github.com/cyberuni/create/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cyberuni/create.git"
-  },
-  "license": "MIT",
-  "files": [
-    "artifacts",
-    "config",
-    "lib",
-    "libm"
-  ],
-  "bin": {
-    "uni-create-monorepo": "lib/bin.js"
-  },
-  "scripts": {
-    "clean": "rimraf .ts coverage lib libm",
-    "dependency-check": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev"
-  },
-  "dependencies": {
-    "@unional/createutils": "workspace:^",
-    "chalk": "^4.1.0",
-    "clibuilder": "^6.5.1",
-    "iso-error": "^3.2.5",
-    "update-notifier": "^5.1.0",
-    "validate-npm-package-name": "^3.0.0"
-  }
+	"name": "@unional/create-monorepo",
+	"version": "0.2.2",
+	"private": true,
+	"description": "creates and manages monorepo",
+	"keywords": [
+		"@unional/create",
+		"circleci",
+		"codacy",
+		"codecov",
+		"commitlint",
+		"coveralls",
+		"eslint",
+		"github",
+		"github-actions",
+		"greenkeeper",
+		"jest",
+		"lerna",
+		"monorepo",
+		"nodejs",
+		"travis",
+		"typescript"
+	],
+	"homepage": "https://github.com/cyberuni/create/tree/main/packages/create-monorepo",
+	"bugs": {
+		"url": "https://github.com/cyberuni/create/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/cyberuni/create.git"
+	},
+	"license": "MIT",
+	"files": [
+		"artifacts",
+		"config",
+		"lib",
+		"libm"
+	],
+	"bin": {
+		"uni-create-monorepo": "lib/bin.js"
+	},
+	"scripts": {
+		"clean": "rimraf .ts coverage lib libm"
+	},
+	"dependencies": {
+		"@unional/createutils": "workspace:^",
+		"chalk": "^4.1.0",
+		"clibuilder": "^6.5.1",
+		"iso-error": "^3.2.5",
+		"update-notifier": "^5.1.0",
+		"validate-npm-package-name": "^3.0.0"
+	}
 }

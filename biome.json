@@ -1,0 +1,15 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.5.11/schema.json",
+	"extends": ["@repobuddy/biome"],
+	"files": {
+		"includes": [
+			"!**/lib",
+			"!**/libm",
+			"!**/coverage",
+			"!**/artifacts",
+			"!**/config",
+			"!packages/devpkg-node/monorepo",
+			"!packages/devpkg-node/simple"
+		]
+	}
+}

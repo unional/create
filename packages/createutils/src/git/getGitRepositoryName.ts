@@ -1,17 +1,20 @@
 export function getGitRepositoryName(remote: string | undefined) {
-  if (remote) {
-    return getFromHttpUrl(remote) || getFromSshUrl(remote)
-  }
-  return undefined
+	if (remote) {
+		return getFromHttpUrl(remote) || getFromSshUrl(remote)
+	}
+	return undefined
 }
 
 function getFromHttpUrl(url: string) {
-  const match = /https?:\/\/(github|gitlab).com\/(.*)\.git/.exec(url)
-  if (match) return match[2]
+	// Anchored and with a bounded character class: the previous `(.*)` between two
+	// unanchored literals backtracked polynomially (js/polynomial-redos).
+	const match = /^https?:\/\/(?:github|gitlab)\.com\/([^\s]+?)\.git$/.exec(url)
+	if (match) return match[1]
 }
 
-
 function getFromSshUrl(url: string) {
-  const match = /git@.*:(.*)\.git/.exec(url)
-  if (match) return match[1]
+	// Anchored, and the host segment excludes `:` so it cannot overlap the path
+	// segment — the unanchored `.*:` form was polynomial (js/polynomial-redos).
+	const match = /^git@[^:\s]+:([^\s]+?)\.git$/.exec(url)
+	if (match) return match[1]
 }
