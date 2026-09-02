@@ -1,0 +1,13 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["github>unional/renovate-preset"],
+	"packageRules": [
+		{
+			"description": "devDependencies only: patch and minor merge themselves once CI is green. Runtime dependencies, peerDependencies and every major stay manual — this repo publishes a toolchain other packages install, so a bump there is a consumer-visible change someone should choose.",
+			"matchDepTypes": ["devDependencies"],
+			"matchUpdateTypes": ["patch", "minor"],
+			"automerge": true,
+			"platformAutomerge": true
+		}
+	]
+}
