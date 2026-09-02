@@ -1,5 +1,28 @@
 # @unional/devpkg-node
 
+## 1.6.4
+
+### Patch Changes
+
+- bad2bc7: Narrow the `clibuilder` dependency from `^6.5.1` to `~6.5.1`.
+  
+  Both packages call `createCli` from clibuilder, and clibuilder 6.6.1 removed that
+  export — its `lib/index.d.ts` re-exports only `./errors` and `./parseArgv`, where
+  6.5.1 also exported `./create-cli`, `./create-plugin-cli` and `./presenter`. Under
+  the old caret range a fresh consumer install resolved 6.6.1 and the CLI threw at
+  startup.
+  
+  The repository was not affected because a `pnpm-workspace.yaml` override pinned
+  6.5.1 locally, which is exactly why this went unnoticed: an override binds this
+  workspace only and never travels with the published package. The constraint now
+  lives in each package's own `dependencies`, and the redundant override is removed.
+- 0a1b238: Rebuild with TypeScript 7. The emitted output changes: the CJS build now targets
+  ES2022 under `module: node16` instead of downlevelling to ES5, and the ESM build
+  targets ES2022 as well. `target: es5` and `moduleResolution: node10` were both
+  removed in TypeScript 7, so the previous settings no longer compile.
+  
+  No public API changes, and the published file list is unchanged.
+
 ## 1.6.3
 
 ### Patch Changes
