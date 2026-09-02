@@ -1,6 +1,16 @@
 packages:
   - packages/*
 
+# Supply-chain soak. The previous form lived in `.npmrc` as `minimumreleaseage=1440`,
+# which is not a valid npm/pnpm key: `pnpm config get minimumReleaseAge` returned
+# `undefined` and npm itself warned `Unknown project config "minimumreleaseage"`, so
+# no version was ever held back. Declared here it is typed config and actually applies.
+# `minimumReleaseAgeStrict` makes it apply to transitive resolutions too, not only
+# direct dependencies. Nothing is excluded; if an install trips the gate, pin an older
+# mature version rather than widening an exclude list.
+minimumReleaseAge: 1440
+minimumReleaseAgeStrict: true
+
 # Every one of these is a postinstall we do not need: `core-js` and `nx` only print
 # donation/telemetry banners, and `@parcel/watcher` builds a native watcher that
 # nothing in this repo watches. Omitting an entry re-triggers ERR_PNPM_IGNORED_BUILDS,
