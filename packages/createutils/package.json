@@ -32,6 +32,6 @@
 		"validate-npm-package-name": "^3.0.0"
 	},
 	"devDependencies": {
-		"clibuilder": "^6.5.1"
+		"clibuilder": "~6.5.1"
 	}
 }
