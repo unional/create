@@ -7,5 +7,13 @@
 		"tsBuildInfoFile": ".ts/esnext.buildinfo",
 		"moduleResolution": "bundler"
 	},
-	"exclude": ["src/**/*.spec.ts"]
+	"exclude": ["src/**/*.spec.ts"],
+	"references": [
+		{
+			"path": "../createutils/tsconfig.libm.json"
+		},
+		{
+			"path": "../createutils/tsconfig.lib.json"
+		}
+	]
 }
