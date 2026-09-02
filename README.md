@@ -10,14 +10,15 @@
 
 - [@unional/devpkg-node](https://github.com/cyberuni/create/tree/main/packages/devpkg-node): shared development dependencies and configuration for Node.js libraries.
 - [@unional/createutils](https://github.com/cyberuni/create/tree/main/packages/createutils): utilities shared by the `create` tools.
-- [@unional/create-monorepo](https://github.com/cyberuni/create/tree/main/packages/create-monorepo): creates a monorepo written in TypeScript.
 - [@unional/monorepo-scripts](https://github.com/cyberuni/create/tree/main/packages/monorepo-scripts): scripts for a TypeScript monorepo.
 
 ## Unpublished packages
 
-These are `private: true`. They have never been published to npm, and this repository does not release them.
+These are `private: true`, and this repository does not release them. All but one have never been published to npm.
 
 - `@unional/create`
+- `@unional/create-monorepo` — 0.1.0 was published in 2019; the package is now
+  `private: true` and this repository does not release it.
 - `@unional/dev-scripts`
 - `@unional/singlerepo-scripts`
 
