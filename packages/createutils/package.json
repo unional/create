@@ -2,13 +2,13 @@
 	"name": "@unional/createutils",
 	"version": "1.1.4",
 	"description": "utilities for create projects",
-	"homepage": "https://github.com/cyberuni/create/tree/main/packages/createutils",
+	"homepage": "https://github.com/unional/create/tree/main/packages/createutils",
 	"bugs": {
-		"url": "https://github.com/cyberuni/create/issues"
+		"url": "https://github.com/unional/create/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/cyberuni/create.git"
+		"url": "https://github.com/unional/create.git"
 	},
 	"license": "MIT",
 	"files": [

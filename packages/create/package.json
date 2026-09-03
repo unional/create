@@ -18,13 +18,13 @@
 		"travis",
 		"typescript"
 	],
-	"homepage": "https://github.com/cyberuni/create/tree/main/packages/create",
+	"homepage": "https://github.com/unional/create/tree/main/packages/create",
 	"bugs": {
-		"url": "https://github.com/cyberuni/create/issues"
+		"url": "https://github.com/unional/create/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/cyberuni/create.git"
+		"url": "https://github.com/unional/create.git"
 	},
 	"license": "MIT",
 	"bin": {
