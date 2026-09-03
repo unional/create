@@ -51,8 +51,8 @@ importers:
         specifier: ^4.1.11
         version: 4.1.11(vitest@4.1.11)
       global-store:
-        specifier: 1.0.0-beta.17
-        version: 1.0.0-beta.17
+        specifier: 1.0.0-beta.21
+        version: 1.0.0-beta.21
       rimraf:
         specifier: ^6.0.0
         version: 6.1.3
@@ -4370,9 +4370,6 @@ packages:
   global-dirs@3.0.1:
     resolution: {integrity: sha512-NBcGGFbBA9s1VzD41QXDG+3++t9Mn5t1FpLdhESY6oKY4gYTFpX4wO3sqGUa0Srjtbfj3szX0RnemmrVRUdULA==}
     engines: {node: '>=10'}
-
-  global-store@1.0.0-beta.17:
-    resolution: {integrity: sha512-CmXMIjcxL0ZcGEf84nrbFgXztt9yszb8isNgKKMGMzhfXBVI4c+0caOvWwj7R/tif0ac76Hi1y3dDIyK/0a0Lw==}
 
   global-store@1.0.0-beta.21:
     resolution: {integrity: sha512-LsToHuelnaAObMdMfHj3H4Gnd0TsTGz5FJouOGuWp5KmolMGX0i0EHg4utXMz6d0Wvovp/T8g7QRdmjvCH3/bg==}
@@ -12094,12 +12091,12 @@ snapshots:
       enquirer: 2.4.1
       find-installed-packages: 2.1.6
       find-up: 4.1.0
-      global-store: 1.0.0-beta.17
+      global-store: 1.0.0-beta.21
       iso-error: 3.2.5
       pad-right: 0.2.2
       search-packages: 2.1.0
-      standard-log: 4.1.8(global-store@1.0.0-beta.17)
-      standard-log-color: 1.5.25(standard-log@4.1.8(global-store@1.0.0-beta.17))
+      standard-log: 4.1.8(global-store@1.0.0-beta.21)
+      standard-log-color: 1.5.25(standard-log@4.1.8(global-store@1.0.0-beta.21))
       tslib: 1.14.1
       type-plus: 1.35.1
       wordwrap: 1.0.0
@@ -13553,8 +13550,6 @@ snapshots:
   global-dirs@3.0.1:
     dependencies:
       ini: 2.0.0
-
-  global-store@1.0.0-beta.17: {}
 
   global-store@1.0.0-beta.21: {}
 
@@ -17494,16 +17489,16 @@ snapshots:
 
   stackback@0.0.2: {}
 
-  standard-log-color@1.5.25(standard-log@4.1.8(global-store@1.0.0-beta.17)):
+  standard-log-color@1.5.25(standard-log@4.1.8(global-store@1.0.0-beta.21)):
     dependencies:
       color-map: 1.1.4
-      standard-log: 4.1.8(global-store@1.0.0-beta.17)
+      standard-log: 4.1.8(global-store@1.0.0-beta.21)
       tslib: 2.8.1
       unpartial: 0.6.4
 
-  standard-log@4.1.8(global-store@1.0.0-beta.17):
+  standard-log@4.1.8(global-store@1.0.0-beta.21):
     dependencies:
-      global-store: 1.0.0-beta.17
+      global-store: 1.0.0-beta.21
       is-node: 1.1.1
       iso-error: 3.2.5
       ms: 2.1.3
