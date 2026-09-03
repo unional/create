@@ -21,13 +21,13 @@
 		"typescript",
 		"yarn"
 	],
-	"homepage": "https://github.com/cyberuni/create/tree/main/packages/monorepo-scripts",
+	"homepage": "https://github.com/unional/create/tree/main/packages/monorepo-scripts",
 	"bugs": {
-		"url": "https://github.com/cyberuni/create/issues"
+		"url": "https://github.com/unional/create/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/cyberuni/create.git"
+		"url": "https://github.com/unional/create.git"
 	},
 	"license": "MIT",
 	"files": [
