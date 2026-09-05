@@ -44,13 +44,13 @@
 		"@types/ramda": "^0.32.0",
 		"@types/tmp": "^0.2.0",
 		"@types/update-notifier": "^5.0.0",
-		"@vitest/coverage-v8": "^4.1.11",
+		"@vitest/coverage-v8": "^5.0.0",
 		"global-store": "1.0.0-beta.21",
 		"husky": "^9.1.7",
 		"rimraf": "^6.0.0",
 		"tmp": "^0.2.1",
 		"typescript": "~7.0.2",
-		"vitest": "^4.1.11"
+		"vitest": "^5.0.0"
 	},
 	"packageManager": "pnpm@11.25.0"
 }
