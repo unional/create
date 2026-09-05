@@ -110,7 +110,7 @@ overrides:
   '@types/update-notifier': 5.0.0
   ansi-colors: 4.1.3
   configstore: 8.0.0
-  find-installed-packages: 2.1.6
+  find-installed-packages: 2.1.8
   iso-error: 3.2.5
   search-packages: 2.1.0
 
@@ -182,8 +182,8 @@ importers:
         specifier: ~6.5.1
         version: 6.5.1
       find-installed-packages:
-        specifier: 2.1.6
-        version: 2.1.6
+        specifier: 2.1.8
+        version: 2.1.8
       iso-error:
         specifier: 3.2.5
         version: 3.2.5
@@ -265,8 +265,8 @@ importers:
         specifier: ~6.5.1
         version: 6.5.1
       find-installed-packages:
-        specifier: 2.1.6
-        version: 2.1.6
+        specifier: 2.1.8
+        version: 2.1.8
       update-notifier:
         specifier: ^5.1.0
         version: 5.1.0
@@ -4156,8 +4156,8 @@ packages:
   find-exec@1.0.3:
     resolution: {integrity: sha512-gnG38zW90mS8hm5smNcrBnakPEt+cGJoiMkJwCU0IYnEb0H2NQk0NIljhNW+48oniCriFek/PH6QXbwsJo/qug==}
 
-  find-installed-packages@2.1.6:
-    resolution: {integrity: sha512-22o/L29wufErac/wvfuzLEwaCxuJKav1mM1AFHS8P6qmsUrJ+7jZj9Xl9AIW6dInefJ4J/mw+d8EHJa6taI+cA==}
+  find-installed-packages@2.1.8:
+    resolution: {integrity: sha512-5b9UYdBuPxKp6CHSRPGEYuyvc15B6PVONPZuX3Ya07DJiBjoF9RFm0E2OlrWoFged+s9paQ13ar7B1ThZX3zCg==}
 
   find-up@1.1.2:
     resolution: {integrity: sha512-jvElSjyuo4EMQGoTwo1uJU5pQMwTW5lS1x05zzfJuTIyLR3zwO27LYrxNg+dlvKpGOuGy/MzBdXh80g0ve5+HA==}
@@ -9885,11 +9885,7 @@ snapshots:
       jest-runner: 26.6.3(supports-color@8.1.1)
       jest-runtime: 26.6.3(supports-color@8.1.1)
     transitivePeerDependencies:
-      - bufferutil
-      - canvas
       - supports-color
-      - ts-node
-      - utf-8-validate
 
   '@jest/test-sequencer@27.5.1(supports-color@8.1.1)':
     dependencies:
@@ -12198,7 +12194,7 @@ snapshots:
       '@types/node': 8.10.66
       camel-case: 4.1.2
       enquirer: 2.4.1
-      find-installed-packages: 2.1.6
+      find-installed-packages: 2.1.8
       find-up: 4.1.0
       global-store: 1.0.0-beta.21
       iso-error: 3.2.5
@@ -13279,10 +13275,10 @@ snapshots:
     dependencies:
       shell-quote: 1.10.0
 
-  find-installed-packages@2.1.6:
+  find-installed-packages@2.1.8:
     dependencies:
       temp: 0.9.4
-      unpartial: 0.6.4
+      unpartial: 1.0.6
 
   find-up@1.1.2:
     dependencies:
@@ -14659,11 +14655,7 @@ snapshots:
       pretty-format: 26.6.2
       throat: 5.0.0
     transitivePeerDependencies:
-      - bufferutil
-      - canvas
       - supports-color
-      - ts-node
-      - utf-8-validate
 
   jest-jasmine2@27.5.1(supports-color@8.1.1):
     dependencies:
@@ -14848,11 +14840,7 @@ snapshots:
       source-map-support: 0.5.21
       throat: 5.0.0
     transitivePeerDependencies:
-      - bufferutil
-      - canvas
       - supports-color
-      - ts-node
-      - utf-8-validate
 
   jest-runner@27.5.1(supports-color@8.1.1):
     dependencies:
@@ -14913,11 +14901,7 @@ snapshots:
       strip-bom: 4.0.0
       yargs: 15.4.1
     transitivePeerDependencies:
-      - bufferutil
-      - canvas
       - supports-color
-      - ts-node
-      - utf-8-validate
 
   jest-runtime@27.5.1(supports-color@8.1.1):
     dependencies:
