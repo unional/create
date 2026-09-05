@@ -29,13 +29,13 @@ workflows:
 jobs:
   local:
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:16
     steps:
       - checkout
       - run: yarn verify
   node-latest:
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:16
     steps:
       - checkout
       - restore_cache:
@@ -80,7 +80,7 @@ jobs:
           path: .reports/junit
   node10:
     docker:
-      - image: 'circleci/node:10'
+      - image: 'circleci/node:16'
     steps:
       - checkout
       - attach_workspace:
@@ -111,7 +111,7 @@ jobs:
           path: .reports/junit
   release:
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:16
     steps:
       - checkout
       - attach_workspace:
