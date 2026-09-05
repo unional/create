@@ -32,7 +32,7 @@ overrides:
   '@types/ramda': 0.27.38
   '@types/update-notifier': 5.0.0
   ansi-colors: 4.1.1
-  configstore: 5.0.1
+  configstore: 8.0.0
   find-installed-packages: 2.1.6
   iso-error: 3.2.5
   search-packages: 2.1.0
