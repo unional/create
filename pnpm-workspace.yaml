@@ -29,7 +29,7 @@ allowBuilds:
 # consumers, where `createCli` no longer exists. The constraint now lives in each
 # package's own `dependencies` as `~6.5.1`.
 overrides:
-  '@types/ramda': 0.27.38
+  '@types/ramda': 0.32.0
   '@types/update-notifier': 5.0.0
   ansi-colors: 4.1.1
   configstore: 5.0.1
