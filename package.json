@@ -43,7 +43,7 @@
 		"@types/node": "^24.0.0",
 		"@types/ramda": "^0.32.0",
 		"@types/tmp": "^0.2.0",
-		"@types/update-notifier": "^5.0.0",
+		"@types/update-notifier": "^6.0.0",
 		"@vitest/coverage-v8": "^5.0.0",
 		"global-store": "1.0.0-beta.21",
 		"husky": "^9.1.7",
