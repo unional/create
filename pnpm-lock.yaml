@@ -112,7 +112,7 @@ overrides:
   configstore: 8.0.0
   find-installed-packages: 2.1.8
   iso-error: 3.2.5
-  search-packages: 2.1.0
+  search-packages: 2.2.2
 
 importers:
 
@@ -194,8 +194,8 @@ importers:
         specifier: ^0.32.0
         version: 0.32.0
       search-packages:
-        specifier: 2.1.0
-        version: 2.1.0
+        specifier: 2.2.2
+        version: 2.2.2
       update-notifier:
         specifier: ^5.1.0
         version: 5.1.0
@@ -7296,8 +7296,9 @@ packages:
     resolution: {integrity: sha512-5LBh1Tls8c9xgGjw3QrMwETmTMVk0oFgvrFSvWx62llR2hcEInrKNZ2GZCCuuy2lvWrdl5jhbpeqc5hRYKFOcw==}
     engines: {node: '>=10'}
 
-  search-packages@2.1.0:
-    resolution: {integrity: sha512-UtiuizI/dm68NnKGbV/gN/vAyqggq9RwtNtl1367yWP2YW8IHfYUt7gBQWg7IoeDYjP4PxQSOqni2uc2/0szJg==}
+  search-packages@2.2.2:
+    resolution: {integrity: sha512-P7oat53N3aSKZWM/M5qRIGLpxhWf0O/m5urSCy/OE17RbtXw/MGFRxlP6F0CcuN6x5cCumM1iM/qV/cdHD7u4w==}
+    engines: {node: '>= 18'}
 
   semver-diff@3.1.1:
     resolution: {integrity: sha512-GX0Ix/CJcHyB8c4ykpHGIAvLyOwOobtM/8d+TQkAd81/bEjgPHrfba41Vpesr7jX/t8Uh+R3EX9eAS5be+jQYg==}
@@ -12523,7 +12524,7 @@ snapshots:
       global-store: 1.0.0-beta.21
       iso-error: 3.2.5
       pad-right: 0.2.2
-      search-packages: 2.1.0
+      search-packages: 2.2.2
       standard-log: 4.1.8(global-store@1.0.0-beta.21)
       standard-log-color: 1.5.25(standard-log@4.1.8(global-store@1.0.0-beta.21))
       tslib: 1.14.1
@@ -17685,7 +17686,7 @@ snapshots:
     dependencies:
       xmlchars: 2.2.0
 
-  search-packages@2.1.0: {}
+  search-packages@2.2.2: {}
 
   semver-diff@3.1.1:
     dependencies:

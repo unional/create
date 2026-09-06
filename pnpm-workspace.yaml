@@ -35,4 +35,4 @@ overrides:
   configstore: 8.0.0
   find-installed-packages: 2.1.8
   iso-error: 3.2.5
-  search-packages: 2.1.0
+  search-packages: 2.2.2
