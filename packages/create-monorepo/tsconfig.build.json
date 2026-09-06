@@ -10,7 +10,7 @@
 	"exclude": ["src/**/*.spec.ts"],
 	"references": [
 		{
-			"path": "../createutils/tsconfig.libm.json"
+			"path": "../createutils/tsconfig.build.json"
 		}
 	]
 }

@@ -1,5 +1,5 @@
 import { generateDisplayedMessage, InMemoryPresenter } from 'clibuilder'
-import { showInvalidPackageName } from '.'
+import { showInvalidPackageName } from './index.js'
 
 test('invalid without reason', () => {
 	const ui = new InMemoryPresenter({ name: 'ui' })

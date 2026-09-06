@@ -27,10 +27,7 @@
 			"path": "packages/monorepo-scripts/tsconfig.lib.json"
 		},
 		{
-			"path": "packages/createutils/tsconfig.libm.json"
-		},
-		{
-			"path": "packages/createutils/tsconfig.lib.json"
+			"path": "packages/createutils/tsconfig.build.json"
 		},
 		{
 			"path": "packages/create/tsconfig.build.json"

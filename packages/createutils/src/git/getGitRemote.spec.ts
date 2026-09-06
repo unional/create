@@ -1,7 +1,7 @@
 import t from 'node:assert'
 import cp from 'node:child_process'
 import { dirSync } from 'tmp'
-import { getGitRemote } from './getGitRemote'
+import { getGitRemote } from './getGitRemote.js'
 
 test('Return the remote url', () => {
 	const tmp = dirSync()

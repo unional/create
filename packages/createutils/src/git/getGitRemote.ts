@@ -1,5 +1,5 @@
 import cp from 'node:child_process'
-import { isGitRepo } from './isGitRepo'
+import { isGitRepo } from './isGitRepo.js'
 
 export function getGitRemote(cwd = process.cwd()) {
 	if (!isGitRepo(cwd)) return undefined

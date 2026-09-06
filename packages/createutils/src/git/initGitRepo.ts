@@ -1,6 +1,6 @@
 import { exec } from 'node:child_process'
 import { promisify } from 'node:util'
-import { isGitRepo } from './isGitRepo'
+import { isGitRepo } from './isGitRepo.js'
 
 const execp = promisify(exec)
 

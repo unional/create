@@ -1,1 +1,1 @@
-export * from './promptNpmPackageName'
+export * from './promptNpmPackageName.js'

@@ -1,1 +1,1 @@
-export * from './promptFolderName'
+export * from './promptFolderName.js'

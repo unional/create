@@ -1,7 +1,7 @@
 import chalk from 'chalk'
 import type { LogPresenter, PromptPresenter } from 'clibuilder'
 import validatePackageName from 'validate-npm-package-name'
-import { showInvalidPackageName } from '../ui'
+import { showInvalidPackageName } from '../ui/index.js'
 
 // istanbul ignore next
 export async function promptNpmPackageName(
