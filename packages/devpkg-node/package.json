@@ -28,11 +28,11 @@
 		"simple"
 	],
 	"dependencies": {
-		"@babel/core": "^7.12.16",
+		"@babel/core": "^8.0.0",
 		"@babel/plugin-proposal-nullish-coalescing-operator": "^7.12.13",
 		"@babel/plugin-proposal-optional-chaining": "^7.12.16",
-		"@babel/preset-env": "^7.12.16",
-		"@babel/preset-typescript": "^7.12.16",
+		"@babel/preset-env": "^8.0.0",
+		"@babel/preset-typescript": "^8.0.0",
 		"@types/jest": "^26.0.20",
 		"@types/node": "^14.14.26",
 		"@typescript-eslint/eslint-plugin": "^4.15.0",
