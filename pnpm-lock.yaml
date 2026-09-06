@@ -292,8 +292,8 @@ importers:
         specifier: ^26.0.20
         version: 26.0.24
       '@types/node':
-        specifier: ^14.14.26
-        version: 14.18.63
+        specifier: ^24.0.0
+        version: 24.13.3
       '@typescript-eslint/eslint-plugin':
         specifier: ^4.15.0
         version: 4.33.0(@typescript-eslint/parser@4.33.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@4.9.5))(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@4.9.5)
@@ -362,7 +362,7 @@ importers:
     dependencies:
       '@commitlint/cli':
         specifier: ^21.0.0
-        version: 21.2.2(@types/node@14.18.63)(conventional-commits-parser@7.1.2)(typescript@4.9.5)
+        version: 21.2.2(@types/node@24.13.3)(conventional-commits-parser@7.1.2)(typescript@4.9.5)
       '@commitlint/config-conventional':
         specifier: ^21.0.0
         version: 21.2.2
@@ -370,8 +370,8 @@ importers:
         specifier: ^26.0.20
         version: 26.0.24
       '@types/node':
-        specifier: ^14.14.26
-        version: 14.18.63
+        specifier: ^24.0.0
+        version: 24.13.3
       '@typescript-eslint/eslint-plugin':
         specifier: ^4.15.0
         version: 4.33.0(@typescript-eslint/parser@4.33.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@4.9.5))(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@4.9.5)
@@ -386,7 +386,7 @@ importers:
         version: 6.5.1
       commitlint-circle:
         specifier: ^1.0.0
-        version: 1.0.0(@commitlint/cli@21.2.2(@types/node@14.18.63)(conventional-commits-parser@7.1.2)(typescript@4.9.5))(encoding@0.1.13)(supports-color@8.1.1)
+        version: 1.0.0(@commitlint/cli@21.2.2(@types/node@24.13.3)(conventional-commits-parser@7.1.2)(typescript@4.9.5))(encoding@0.1.13)(supports-color@8.1.1)
       dependency-check:
         specifier: ^4.1.0
         version: 4.1.0(supports-color@8.1.1)
@@ -452,7 +452,7 @@ importers:
     dependencies:
       '@commitlint/cli':
         specifier: ^21.0.0
-        version: 21.2.2(@types/node@14.18.63)(conventional-commits-parser@7.1.2)(typescript@4.9.5)
+        version: 21.2.2(@types/node@24.13.3)(conventional-commits-parser@7.1.2)(typescript@4.9.5)
       '@commitlint/config-conventional':
         specifier: ^21.0.0
         version: 21.2.2
@@ -460,8 +460,8 @@ importers:
         specifier: ^26.0.20
         version: 26.0.24
       '@types/node':
-        specifier: ^14.14.26
-        version: 14.18.63
+        specifier: ^24.0.0
+        version: 24.13.3
       '@typescript-eslint/eslint-plugin':
         specifier: ^4.15.0
         version: 4.33.0(@typescript-eslint/parser@4.33.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@4.9.5))(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@4.9.5)
@@ -476,7 +476,7 @@ importers:
         version: 6.5.1
       commitlint-circle:
         specifier: ^1.0.0
-        version: 1.0.0(@commitlint/cli@21.2.2(@types/node@14.18.63)(conventional-commits-parser@7.1.2)(typescript@4.9.5))(encoding@0.1.13)(supports-color@8.1.1)
+        version: 1.0.0(@commitlint/cli@21.2.2(@types/node@24.13.3)(conventional-commits-parser@7.1.2)(typescript@4.9.5))(encoding@0.1.13)(supports-color@8.1.1)
       dependency-check:
         specifier: ^4.1.0
         version: 4.1.0(supports-color@8.1.1)
@@ -521,7 +521,7 @@ importers:
         version: 0.6.5(jest@27.5.1(node-notifier@8.0.2)(supports-color@8.1.1))
       lerna:
         specifier: ^6.5.0
-        version: 6.6.2(@types/node@14.18.63)(bluebird@3.7.2)(debug@4.4.3(supports-color@8.1.1))(encoding@0.1.13)(supports-color@8.1.1)
+        version: 6.6.2(@types/node@24.13.3)(bluebird@3.7.2)(debug@4.4.3(supports-color@8.1.1))(encoding@0.1.13)(supports-color@8.1.1)
       power-assert:
         specifier: ^1.6.1
         version: 1.6.1
@@ -2460,9 +2460,6 @@ packages:
 
   '@types/ncp@2.0.8':
     resolution: {integrity: sha512-pLNWVLCVWBLVM4F2OPjjK6FWFtByFKD7LhHryF+MbVLws7ENj09mKxRFlhkGPOXfJuaBAG+2iADKJsZwnAbYDw==}
-
-  '@types/node@14.18.63':
-    resolution: {integrity: sha512-fAtCfv4jJg+ExtXhvCkCqUKZ+4ok/JQk01qDKhL5BDDoS3AxKXhV5/MAVUZyQnSEd2GT92fkgZl0pz0Q0AzcIQ==}
 
   '@types/node@24.13.3':
     resolution: {integrity: sha512-Dh8vAsV36ig5wa9OX4pXvMc9D3Veibfw2wix0CUwYODLD8nkj9UsLjASr49nPg+2eKzxhBV+v7L8pXvT4e639Q==}
@@ -9629,12 +9626,12 @@ snapshots:
       exec-sh: 0.3.6
       minimist: 1.2.8
 
-  '@commitlint/cli@21.2.2(@types/node@14.18.63)(conventional-commits-parser@7.1.2)(typescript@4.9.5)':
+  '@commitlint/cli@21.2.2(@types/node@24.13.3)(conventional-commits-parser@7.1.2)(typescript@4.9.5)':
     dependencies:
       '@commitlint/config-conventional': 21.2.2
       '@commitlint/format': 21.2.2
       '@commitlint/lint': 21.2.2
-      '@commitlint/load': 21.2.2(@types/node@14.18.63)(typescript@4.9.5)
+      '@commitlint/load': 21.2.2(@types/node@24.13.3)(typescript@4.9.5)
       '@commitlint/read': 21.2.1(conventional-commits-parser@7.1.2)
       '@commitlint/types': 21.2.0
       tinyexec: 1.3.0
@@ -9695,14 +9692,14 @@ snapshots:
       '@commitlint/rules': 21.2.2
       '@commitlint/types': 21.2.0
 
-  '@commitlint/load@21.2.2(@types/node@14.18.63)(typescript@4.9.5)':
+  '@commitlint/load@21.2.2(@types/node@24.13.3)(typescript@4.9.5)':
     dependencies:
       '@commitlint/config-validator': 21.2.0
       '@commitlint/execute-rule': 21.0.1
       '@commitlint/resolve-extends': 21.2.2
       '@commitlint/types': 21.2.0
       cosmiconfig: 9.0.2(typescript@4.9.5)
-      cosmiconfig-typescript-loader: 6.3.0(@types/node@14.18.63)(cosmiconfig@9.0.2(typescript@4.9.5))(typescript@4.9.5)
+      cosmiconfig-typescript-loader: 6.3.0(@types/node@24.13.3)(cosmiconfig@9.0.2(typescript@4.9.5))(typescript@4.9.5)
       es-toolkit: 1.52.0
       is-plain-obj: 4.1.0
       picocolors: 1.1.1
@@ -9877,12 +9874,12 @@ snapshots:
 
   '@hutson/parse-repository-url@3.0.2': {}
 
-  '@inquirer/external-editor@1.0.3(@types/node@14.18.63)':
+  '@inquirer/external-editor@1.0.3(@types/node@24.13.3)':
     dependencies:
       chardet: 2.2.0
       iconv-lite: 0.7.3
     optionalDependencies:
-      '@types/node': 14.18.63
+      '@types/node': 24.13.3
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -11515,8 +11512,6 @@ snapshots:
     dependencies:
       '@types/node': 24.13.3
 
-  '@types/node@14.18.63': {}
-
   '@types/node@24.13.3':
     dependencies:
       undici-types: 7.18.2
@@ -12609,9 +12604,9 @@ snapshots:
     dependencies:
       delayed-stream: 1.0.0
 
-  commitlint-circle@1.0.0(@commitlint/cli@21.2.2(@types/node@14.18.63)(conventional-commits-parser@7.1.2)(typescript@4.9.5))(encoding@0.1.13)(supports-color@8.1.1):
+  commitlint-circle@1.0.0(@commitlint/cli@21.2.2(@types/node@24.13.3)(conventional-commits-parser@7.1.2)(typescript@4.9.5))(encoding@0.1.13)(supports-color@8.1.1):
     dependencies:
-      '@commitlint/cli': 21.2.2(@types/node@14.18.63)(conventional-commits-parser@7.1.2)(typescript@4.9.5)
+      '@commitlint/cli': 21.2.2(@types/node@24.13.3)(conventional-commits-parser@7.1.2)(typescript@4.9.5)
       '@octokit/rest': 15.18.3(encoding@0.1.13)(supports-color@8.1.1)
       execa: 0.10.0
       tslib: 1.14.1
@@ -12808,9 +12803,9 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@6.3.0(@types/node@14.18.63)(cosmiconfig@9.0.2(typescript@4.9.5))(typescript@4.9.5):
+  cosmiconfig-typescript-loader@6.3.0(@types/node@24.13.3)(cosmiconfig@9.0.2(typescript@4.9.5))(typescript@4.9.5):
     dependencies:
-      '@types/node': 14.18.63
+      '@types/node': 24.13.3
       cosmiconfig: 9.0.2(typescript@4.9.5)
       jiti: 2.6.1
       typescript: 4.9.5
@@ -14375,9 +14370,9 @@ snapshots:
       through: 2.3.8
       wrap-ansi: 7.0.0
 
-  inquirer@8.2.7(@types/node@14.18.63):
+  inquirer@8.2.7(@types/node@24.13.3):
     dependencies:
-      '@inquirer/external-editor': 1.0.3(@types/node@14.18.63)
+      '@inquirer/external-editor': 1.0.3(@types/node@24.13.3)
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       cli-cursor: 3.1.0
@@ -15704,7 +15699,7 @@ snapshots:
       - encoding
       - supports-color
 
-  lerna@6.6.2(@types/node@14.18.63)(bluebird@3.7.2)(debug@4.4.3(supports-color@8.1.1))(encoding@0.1.13)(supports-color@8.1.1):
+  lerna@6.6.2(@types/node@24.13.3)(bluebird@3.7.2)(debug@4.4.3(supports-color@8.1.1))(encoding@0.1.13)(supports-color@8.1.1):
     dependencies:
       '@lerna/child-process': 6.6.2
       '@lerna/create': 6.6.2(bluebird@3.7.2)(supports-color@8.1.1)
@@ -15738,7 +15733,7 @@ snapshots:
       has-unicode: 2.0.1
       import-local: 3.2.0
       init-package-json: 3.0.2
-      inquirer: 8.2.7(@types/node@14.18.63)
+      inquirer: 8.2.7(@types/node@24.13.3)
       is-ci: 2.0.0
       is-stream: 2.0.0
       js-yaml: 4.3.2
