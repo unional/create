@@ -36,5 +36,8 @@
 	},
 	"devDependencies": {
 		"clibuilder": "~6.5.1"
+	},
+	"engines": {
+		"node": "^20.19.0 || ^22.13.0 || >=24"
 	}
 }
