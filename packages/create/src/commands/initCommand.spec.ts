@@ -1,7 +1,7 @@
 import a from 'assertron'
 import { setupCommandTest } from 'clibuilder'
 import { some } from 'satisfier'
-import { initCommand } from './initCommand'
+import { initCommand } from './initCommand.js'
 
 describe('assert installed dependencies', () => {
 	let actualPackages: string[]

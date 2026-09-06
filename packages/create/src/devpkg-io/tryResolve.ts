@@ -1,5 +1,8 @@
+import { createRequire } from 'node:module'
 import path from 'node:path'
-import { PackageNotFound } from './errors'
+import { PackageNotFound } from './errors.js'
+
+const require = createRequire(import.meta.url)
 
 export function tryResolve(packageName: string) {
 	try {

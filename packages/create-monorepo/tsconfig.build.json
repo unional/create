@@ -1,17 +1,14 @@
 {
 	"extends": "./tsconfig.base.json",
 	"compilerOptions": {
-		"module": "node16",
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
 		"outDir": "lib",
 		"target": "es2022",
-		"tsBuildInfoFile": ".ts/cjs.buildinfo",
-		"moduleResolution": "node16"
+		"tsBuildInfoFile": ".ts/build.buildinfo"
 	},
 	"exclude": ["src/**/*.spec.ts"],
 	"references": [
-		{
-			"path": "../createutils/tsconfig.lib.json"
-		},
 		{
 			"path": "../createutils/tsconfig.libm.json"
 		}

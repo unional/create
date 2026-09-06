@@ -1,7 +1,7 @@
 import { createPluginCommand } from 'clibuilder'
 import { searchByKeywords } from 'search-packages'
-import { CLI_NAME } from '../pkg'
-import { askLanguage, chooseLanguage } from './language'
+import { CLI_NAME } from '../pkg.js'
+import { askLanguage, chooseLanguage } from './language.js'
 
 export const createCommand = createPluginCommand({
 	name: 'create',

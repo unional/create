@@ -3,7 +3,7 @@ import fs from 'node:fs'
 import a from 'assertron'
 import { pathEqual } from 'path-equal'
 import { dirSync } from 'tmp'
-import { copyArtifacts, FolderNotFoundInPackage, PackageNotFound } from '.'
+import { copyArtifacts, FolderNotFoundInPackage, PackageNotFound } from './index.js'
 
 test('not exist package throws PackageNotFound', async () => {
 	const err = await a.throws(() => copyArtifacts('not-exist-package', 'something'), PackageNotFound)

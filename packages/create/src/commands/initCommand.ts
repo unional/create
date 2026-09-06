@@ -2,9 +2,9 @@
 import { getGitConfig, getGitRemote, getGitRepositoryName, isGitRepo } from '@unional/createutils'
 import { createPluginCommand, type PromptPresenter } from 'clibuilder'
 import type Enquirer from 'enquirer'
-import { copyArtifacts } from '../devpkg-io'
-import { initializeFolder } from '../io'
-import { installDev } from '../npm'
+import { copyArtifacts } from '../devpkg-io/index.js'
+import { initializeFolder } from '../io/index.js'
+import { installDev } from '../npm/index.js'
 
 export const initCommand = createPluginCommand({
 	name: 'init',

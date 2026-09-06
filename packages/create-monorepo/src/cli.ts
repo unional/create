@@ -3,9 +3,9 @@ import path from 'node:path'
 import { initGitRepo } from '@unional/createutils'
 import chalk from 'chalk'
 import { createCli } from 'clibuilder'
-import { assertPackageNameIsValid } from './checkProjectName'
-import { CLI_NAME } from './constants'
-import { pkg } from './pkg'
+import { assertPackageNameIsValid } from './checkProjectName.js'
+import { CLI_NAME } from './constants.js'
+import { pkg } from './pkg.js'
 
 export const cli = createCli({
 	name: CLI_NAME,

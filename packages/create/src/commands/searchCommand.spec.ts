@@ -1,5 +1,5 @@
 import { setupCommandTest } from 'clibuilder'
-import { searchCommand } from './searchCommand'
+import { searchCommand } from './searchCommand.js'
 
 test('if config with devPkgKeywords, that will be used instead', async () => {
 	let actual: string[] = []
