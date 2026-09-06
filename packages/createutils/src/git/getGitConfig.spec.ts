@@ -2,7 +2,7 @@ import t from 'node:assert'
 import { exec } from 'node:child_process'
 import { promisify } from 'node:util'
 import { dirSync } from 'tmp'
-import { getGitConfig } from '.'
+import { getGitConfig } from './index.js'
 
 const execp = promisify(exec)
 test('result is free of newline', async () => {

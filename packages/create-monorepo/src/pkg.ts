@@ -1,2 +1,5 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+import { createRequire } from 'node:module'
+
+const require = createRequire(import.meta.url)
+
 export const pkg = require('../package.json')

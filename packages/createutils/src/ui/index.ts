@@ -1,2 +1,2 @@
-export * from './promptCreatePackageConfirmation'
-export * from './showInvalidPackageName'
+export * from './promptCreatePackageConfirmation.js'
+export * from './showInvalidPackageName.js'

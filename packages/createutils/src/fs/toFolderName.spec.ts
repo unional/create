@@ -1,4 +1,4 @@
-import { toFolderName } from './toFolderName'
+import { toFolderName } from './toFolderName.js'
 
 test('simple package name', () => {
 	expect(toFolderName('abc')).toEqual('abc')

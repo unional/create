@@ -2,7 +2,7 @@ import a from 'assertron'
 import { InMemoryPresenter } from 'clibuilder'
 import type { InputQuestion, ListQuestion } from 'inquirer'
 import { has } from 'satisfier'
-import { askLanguage, chooseLanguage } from './language'
+import { askLanguage, chooseLanguage } from './language.js'
 
 describe('chooseLanguage()', () => {
 	test('by default supports TypeScript', async () => {

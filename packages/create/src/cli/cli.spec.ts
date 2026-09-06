@@ -1,6 +1,6 @@
 import t from 'node:assert'
-import { pkg } from '../pkg'
-import { cli } from './cli'
+import { pkg } from '../pkg.js'
+import { cli } from './cli.js'
 
 test('cli name is "uni-create"', () => {
 	t.strictEqual(cli.name, 'uni-create')

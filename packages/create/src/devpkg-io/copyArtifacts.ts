@@ -1,9 +1,9 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { promisify } from 'node:util'
-import { ncp } from 'ncp'
-import { FolderNotFoundInPackage } from './errors'
-import { tryResolve } from './tryResolve'
+import ncp from 'ncp'
+import { FolderNotFoundInPackage } from './errors.js'
+import { tryResolve } from './tryResolve.js'
 
 export function copyArtifacts(packageName: string, name: string, cwd = process.cwd()) {
 	return copyFile(packageName, path.join(name, 'artifacts'), cwd)

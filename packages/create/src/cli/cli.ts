@@ -7,8 +7,8 @@ import {
 } from '@unional/createutils'
 import chalk from 'chalk'
 import { createPluginCli } from 'clibuilder'
-import { initCommand, listCommand, searchCommand } from '../commands'
-import { CLI_NAME, version } from '../pkg'
+import { initCommand, listCommand, searchCommand } from '../commands/index.js'
+import { CLI_NAME, version } from '../pkg.js'
 
 export const cli = createPluginCli({
 	name: CLI_NAME,

@@ -1,5 +1,5 @@
 import t from 'node:assert'
-import { getGitRepositoryName } from './getGitRepositoryName'
+import { getGitRepositoryName } from './getGitRepositoryName.js'
 
 test('undefined remote gets undefined repo name', () => {
 	t.strictEqual(getGitRepositoryName(undefined), undefined)

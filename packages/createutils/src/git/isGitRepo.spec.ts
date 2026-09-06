@@ -4,7 +4,7 @@ import { mkdir } from 'node:fs'
 import path from 'node:path'
 import { promisify } from 'node:util'
 import { dirSync } from 'tmp'
-import { isGitRepo } from '.'
+import { isGitRepo } from './index.js'
 
 const execp = promisify(exec)
 const mkdirp = promisify(mkdir)

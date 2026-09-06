@@ -13,16 +13,19 @@
 	"license": "MIT",
 	"files": [
 		"lib",
-		"libm",
 		"src",
 		"!**/*.{spec,test,unit,accept,integrate,system,perf,stress,study,stories}.*"
 	],
-	"main": "lib/index.js",
-	"module": "libm/index.js",
-	"jsnext:main": "libm/index.js",
-	"typings": "libm/index.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./lib/index.d.ts",
+			"default": "./lib/index.js"
+		}
+	},
+	"types": "./lib/index.d.ts",
 	"scripts": {
-		"clean": "rimraf .ts coverage lib libm"
+		"clean": "rimraf .ts coverage lib"
 	},
 	"dependencies": {
 		"chalk": "^4.1.0",

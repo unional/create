@@ -30,17 +30,17 @@
 		"url": "https://github.com/unional/create.git"
 	},
 	"license": "MIT",
+	"type": "module",
 	"files": [
 		"artifacts",
 		"config",
-		"lib",
-		"libm"
+		"lib"
 	],
 	"bin": {
 		"uni-create-monorepo": "lib/bin.js"
 	},
 	"scripts": {
-		"clean": "rimraf .ts coverage lib libm"
+		"clean": "rimraf .ts coverage lib"
 	},
 	"dependencies": {
 		"@unional/createutils": "workspace:^",

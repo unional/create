@@ -1,7 +1,7 @@
 import { exec } from 'node:child_process'
 import { promisify } from 'node:util'
 import { dirSync } from 'tmp'
-import { initGitRepo, isGitRepo } from '.'
+import { initGitRepo, isGitRepo } from './index.js'
 
 const execp = promisify(exec)
 

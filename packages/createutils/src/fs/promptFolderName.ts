@@ -1,7 +1,7 @@
 import chalk from 'chalk'
 import type { LogPresenter, PromptPresenter } from 'clibuilder'
 import validFilename from 'valid-filename'
-import { toFolderName } from './toFolderName'
+import { toFolderName } from './toFolderName.js'
 
 // istanbul ignore next
 export async function promptFolderName(

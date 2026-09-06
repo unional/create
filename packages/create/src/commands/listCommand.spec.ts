@@ -1,5 +1,5 @@
 import { setupCommandTest } from 'clibuilder'
-import { listCommand } from './listCommand'
+import { listCommand } from './listCommand.js'
 
 test('if config with devPkgKeyword, that will be used instead', async () => {
 	let actual: string[] = []

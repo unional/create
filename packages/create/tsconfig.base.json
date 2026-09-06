@@ -5,7 +5,7 @@
 	},
 	"references": [
 		{
-			"path": "../createutils"
+			"path": "../createutils/tsconfig.build.json"
 		}
 	],
 	"include": ["src", "typings"]

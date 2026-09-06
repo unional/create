@@ -3,7 +3,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { getGitRemote, isGitRepo } from '@unional/createutils'
 import { dirSync } from 'tmp'
-import { initializeFolder } from '.'
+import { initializeFolder } from './index.js'
 
 test('copy LICENSE', async () => {
 	const tmp = dirSync()

@@ -1,2 +1,2 @@
-export * from './copyArtifacts'
-export * from './errors'
+export * from './copyArtifacts.js'
+export * from './errors.js'
