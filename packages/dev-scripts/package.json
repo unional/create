@@ -20,7 +20,7 @@
 	"dependencies": {
 		"clibuilder": "~6.5.1",
 		"update-notifier": "^5.1.0",
-		"chalk": "^4.1.0",
+		"chalk": "^6.0.0",
 		"find-installed-packages": "^2.1.6"
 	},
 	"private": true
