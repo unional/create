@@ -179,8 +179,8 @@ importers:
         specifier: ^4.1.0
         version: 4.1.2
       clibuilder:
-        specifier: ~6.5.1
-        version: 6.5.1
+        specifier: ~6.6.0
+        version: 6.6.1
       find-installed-packages:
         specifier: 2.1.8
         version: 2.1.8
@@ -222,8 +222,8 @@ importers:
         specifier: ^4.1.0
         version: 4.1.2
       clibuilder:
-        specifier: ~6.5.1
-        version: 6.5.1
+        specifier: ~6.6.0
+        version: 6.6.1
       iso-error:
         specifier: 3.2.5
         version: 3.2.5
@@ -253,8 +253,8 @@ importers:
         version: 3.0.0
     devDependencies:
       clibuilder:
-        specifier: ~6.5.1
-        version: 6.5.1
+        specifier: ~6.6.0
+        version: 6.6.1
 
   packages/dev-scripts:
     dependencies:
@@ -262,8 +262,8 @@ importers:
         specifier: ^4.1.0
         version: 4.1.2
       clibuilder:
-        specifier: ~6.5.1
-        version: 6.5.1
+        specifier: ~6.6.0
+        version: 6.6.1
       find-installed-packages:
         specifier: 2.1.8
         version: 2.1.8
@@ -304,8 +304,8 @@ importers:
         specifier: ^26.6.3
         version: 26.6.3(@babel/core@8.0.1)(supports-color@8.1.1)
       clibuilder:
-        specifier: ~6.5.1
-        version: 6.5.1
+        specifier: ~6.6.0
+        version: 6.6.1
       dependency-check:
         specifier: ^4.1.0
         version: 4.1.0(supports-color@8.1.1)
@@ -382,8 +382,8 @@ importers:
         specifier: ^11.0.0
         version: 11.5.5
       clibuilder:
-        specifier: ~6.5.1
-        version: 6.5.1
+        specifier: ~6.6.0
+        version: 6.6.1
       commitlint-circle:
         specifier: ^1.0.0
         version: 1.0.0(@commitlint/cli@21.2.2(@types/node@24.13.3)(conventional-commits-parser@7.1.2)(typescript@4.9.5))(encoding@0.1.13)(supports-color@8.1.1)
@@ -472,8 +472,8 @@ importers:
         specifier: ^11.0.0
         version: 11.5.5
       clibuilder:
-        specifier: ~6.5.1
-        version: 6.5.1
+        specifier: ~6.6.0
+        version: 6.6.1
       commitlint-circle:
         specifier: ^1.0.0
         version: 1.0.0(@commitlint/cli@21.2.2(@types/node@24.13.3)(conventional-commits-parser@7.1.2)(typescript@4.9.5))(encoding@0.1.13)(supports-color@8.1.1)
@@ -3374,8 +3374,8 @@ packages:
     resolution: {integrity: sha512-FxqpkPPwu1HjuN93Omfm4h8uIanXofW0RxVEW3k5RKx+mJJYSthzNhp32Kzxxy3YAEZ/Dc/EWN1vZRY0+kOhbw==}
     engines: {node: '>= 10'}
 
-  clibuilder@6.5.1:
-    resolution: {integrity: sha512-yYgRZKgKdinhB7oRyv0cuIBIppoEXE19bDPKFbcDcaIB6wMwXEbQrokDGVnDaQpHGQXRT8qbkLVjUH4mPKCeAg==}
+  clibuilder@6.6.1:
+    resolution: {integrity: sha512-gaeK0LkXCkRHz1AII4JF8F6aPN3P7vUJ3C2JBCNpsEXdIQhn5IV57IzbydxoQkCSXuumpU722IITBrvzKPOiGA==}
     engines: {node: '>= 8'}
 
   cliui@5.0.0:
@@ -12513,7 +12513,7 @@ snapshots:
 
   cli-width@3.0.0: {}
 
-  clibuilder@6.5.1:
+  clibuilder@6.6.1:
     dependencies:
       '@types/node': 8.10.66
       camel-case: 4.1.2
