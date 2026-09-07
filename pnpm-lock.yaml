@@ -179,8 +179,8 @@ importers:
         specifier: ^4.1.0
         version: 4.1.2
       clibuilder:
-        specifier: ~6.5.1
-        version: 6.5.1
+        specifier: ~10.1.0
+        version: 10.1.0
       find-installed-packages:
         specifier: 2.1.8
         version: 2.1.8
@@ -222,8 +222,8 @@ importers:
         specifier: ^4.1.0
         version: 4.1.2
       clibuilder:
-        specifier: ~6.5.1
-        version: 6.5.1
+        specifier: ~10.1.0
+        version: 10.1.0
       iso-error:
         specifier: 3.2.5
         version: 3.2.5
@@ -253,8 +253,8 @@ importers:
         version: 3.0.0
     devDependencies:
       clibuilder:
-        specifier: ~6.5.1
-        version: 6.5.1
+        specifier: ~10.1.0
+        version: 10.1.0
 
   packages/dev-scripts:
     dependencies:
@@ -262,8 +262,8 @@ importers:
         specifier: ^4.1.0
         version: 4.1.2
       clibuilder:
-        specifier: ~6.5.1
-        version: 6.5.1
+        specifier: ~10.1.0
+        version: 10.1.0
       find-installed-packages:
         specifier: 2.1.8
         version: 2.1.8
@@ -304,8 +304,8 @@ importers:
         specifier: ^26.6.3
         version: 26.6.3(@babel/core@8.0.1)(supports-color@8.1.1)
       clibuilder:
-        specifier: ~6.5.1
-        version: 6.5.1
+        specifier: ~10.1.0
+        version: 10.1.0
       dependency-check:
         specifier: ^4.1.0
         version: 4.1.0(supports-color@8.1.1)
@@ -382,8 +382,8 @@ importers:
         specifier: ^11.0.0
         version: 11.5.5
       clibuilder:
-        specifier: ~6.5.1
-        version: 6.5.1
+        specifier: ~10.1.0
+        version: 10.1.0
       commitlint-circle:
         specifier: ^1.0.0
         version: 1.0.0(@commitlint/cli@21.2.2(@types/node@24.13.3)(conventional-commits-parser@7.1.2)(typescript@4.9.5))(encoding@0.1.13)(supports-color@8.1.1)
@@ -472,8 +472,8 @@ importers:
         specifier: ^11.0.0
         version: 11.5.5
       clibuilder:
-        specifier: ~6.5.1
-        version: 6.5.1
+        specifier: ~10.1.0
+        version: 10.1.0
       commitlint-circle:
         specifier: ^1.0.0
         version: 1.0.0(@commitlint/cli@21.2.2(@types/node@24.13.3)(conventional-commits-parser@7.1.2)(typescript@4.9.5))(encoding@0.1.13)(supports-color@8.1.1)
@@ -1636,6 +1636,9 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
+  '@just-func/types@0.5.1':
+    resolution: {integrity: sha512-yP+XbIIT5qGI/6TOZ0lRFHq2UubCfpf+2EKQPhEwOGsvh1vJTdDTPGyNWYHmLMLT5jx8h/SR3mAAVDmYyAjpwA==}
+
   '@lerna/add@3.21.0':
     resolution: {integrity: sha512-vhUXXF6SpufBE1EkNEXwz1VLW03f177G9uMOFMQkp6OJ30/PWg4Ekifuz9/3YfgB2/GH8Tu4Lk3O51P2Hskg/A==}
     engines: {node: '>= 6.9.0'}
@@ -2464,9 +2467,6 @@ packages:
   '@types/node@24.13.3':
     resolution: {integrity: sha512-Dh8vAsV36ig5wa9OX4pXvMc9D3Veibfw2wix0CUwYODLD8nkj9UsLjASr49nPg+2eKzxhBV+v7L8pXvT4e639Q==}
 
-  '@types/node@8.10.66':
-    resolution: {integrity: sha512-tktOkFUA4kXx2hhhrB8bIFb5TbwzS4uOhKEmwiD+NoiL0qtP2OQ9mFldbgD4dV1djrlBYP6eBuQZiWjuHUpqFw==}
-
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
 
@@ -3244,9 +3244,6 @@ packages:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
 
-  camel-case@4.1.2:
-    resolution: {integrity: sha512-gxGWBrTT1JuMx6R+o5PTXMmUnhnVzLQ9SNutD4YqKtI6ap897t3tKECYla6gCWEkplXnlNybEkZg9GEGxKFCgw==}
-
   camelcase-keys@2.1.0:
     resolution: {integrity: sha512-bA/Z/DERHKqoEOrp+qeGKw1QlvEQkGZSc0XaY6VnTxZr+Kv1G5zFwttpjv8qxZ/sBPT4nthwZaAcsAZTJlSKXQ==}
     engines: {node: '>=0.10.0'}
@@ -3374,9 +3371,9 @@ packages:
     resolution: {integrity: sha512-FxqpkPPwu1HjuN93Omfm4h8uIanXofW0RxVEW3k5RKx+mJJYSthzNhp32Kzxxy3YAEZ/Dc/EWN1vZRY0+kOhbw==}
     engines: {node: '>= 10'}
 
-  clibuilder@6.5.1:
-    resolution: {integrity: sha512-yYgRZKgKdinhB7oRyv0cuIBIppoEXE19bDPKFbcDcaIB6wMwXEbQrokDGVnDaQpHGQXRT8qbkLVjUH4mPKCeAg==}
-    engines: {node: '>= 8'}
+  clibuilder@10.1.0:
+    resolution: {integrity: sha512-JbaMzimIyASNqVPbnWbS8eUroy9HlRQBsD0GN74/B2bqkg+lx3PiGyjkpdqkxvjz1pBXfGFEBT3BW9eoq8cKBw==}
+    engines: {node: '>= 20.19'}
 
   cliui@5.0.0:
     resolution: {integrity: sha512-PYeGSEmmHM6zvoef2w8TPzlrnNpXIjTipYK780YswmIP9vjxmd6Y2a3CB2Ks6/AU8NHjZugXvo8w3oWM2qnwXA==}
@@ -3436,8 +3433,9 @@ packages:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
     engines: {node: '>=7.0.0'}
 
-  color-map@1.1.4:
-    resolution: {integrity: sha512-AKULPm31jBV3FvCVtkMX1+W9dJghKkZ9uyJJ8tjf3IpdBkJjh3z1SFis1G9xeasfptIzCDndnOBNpzJ9chkiYg==}
+  color-map@2.2.0:
+    resolution: {integrity: sha512-s62Ctm4OHI8lptu39zDr1ZTRaBLGrAwSWilkHyXr2+ceI54rTBeO+CnbeJY0vG4REygS1zNpgCd2Hy7EQnwSEA==}
+    engines: {node: '>= 20'}
 
   color-name@1.1.3:
     resolution: {integrity: sha512-72fSenhMw2HZMTVHeCA9KCmpEIbzWiQsjN+BHcBbS9vr1mtt+vJjPdksIBNUmKAW8TFUDPJK5SUU3QhE9NEXDw==}
@@ -5056,10 +5054,6 @@ packages:
     resolution: {integrity: sha512-5KoIu2Ngpyek75jXodFvnafB6DJgr3u8uuK0LEZJjrU19DrMD3EVERaR8sjz8CCGgpZvxPl9SuE1GMVPFHx1mw==}
     engines: {node: '>= 0.4'}
 
-  is-node@1.1.1:
-    resolution: {integrity: sha512-61p7HKQkk1/FxHHB4igz1bEbH7ltKKocRza1N8uH4xJQLSzJDNuE5OLpb8kDtBN+0otXI1/45q8/Uk4/g5UtuQ==}
-    engines: {node: '>= 0.10'}
-
   is-npm@5.0.0:
     resolution: {integrity: sha512-WW/rQLOazUq+ST/bCAVBp/2oMERWLsR7OrKyt052dNDk4DHcDE0/7QSXITlmi+VBcV13DfIbysG3tZJm5RfdBA==}
     engines: {node: '>=10'}
@@ -5885,9 +5879,6 @@ packages:
     resolution: {integrity: sha512-RPNliZOFkqFumDhvYqOaNY4Uz9oJM2K9tC6JWsJJsNdhuONW4LQHRBpb0qf4pJApVffI5N39SwzWZJuEhfd7eQ==}
     engines: {node: '>=0.10.0'}
 
-  lower-case@2.0.2:
-    resolution: {integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==}
-
   lowercase-keys@1.0.1:
     resolution: {integrity: sha512-G2Lj61tXDnVFFOi8VZds+SoQjtQC3dgokKdDG2mTm1tx4m50NUHBOZSBwQQHyy0V12A0JTG4icfZQH+xPyh8VA==}
     engines: {node: '>=0.10.0'}
@@ -6209,9 +6200,6 @@ packages:
 
   nice-try@1.0.5:
     resolution: {integrity: sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==}
-
-  no-case@3.0.4:
-    resolution: {integrity: sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==}
 
   node-addon-api@3.2.1:
     resolution: {integrity: sha512-mmcei9JghVNDYydghQmeDX8KoAm0FAiYyIcUt/N4nhyAipB17pllZQDOJD2fotxABnt4Mdz+dKTO7eftLg4d0A==}
@@ -6661,9 +6649,6 @@ packages:
 
   parse5@6.0.1:
     resolution: {integrity: sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==}
-
-  pascal-case@3.1.2:
-    resolution: {integrity: sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g==}
 
   pascalcase@0.1.1:
     resolution: {integrity: sha512-XHXfu/yOQRy9vYOtUDVMN60OEJjW013GoObG1o+xwQTpB9eYJX/BjXMsdW13ZDPruFhYYn0AG22w0xgQMwl3Nw==}
@@ -7543,15 +7528,13 @@ packages:
   stackback@0.0.2:
     resolution: {integrity: sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==}
 
-  standard-log-color@1.5.25:
-    resolution: {integrity: sha512-Syr0vjPtY+uRiq/cTsJG1n5/dRfdM9Vxrq+iLBWDLNdLcWx6HyXAcdMSqjGaQ6u2v8PrlFUToD0qtGmVOTg07g==}
+  standard-log-color@12.1.2:
+    resolution: {integrity: sha512-3ZFt/+zhX58tekK/k8KrKBBkilopvYpmMPx1j1okyaM8VTmXkodB2uJJCBmfrrXZ7F2AjuOCeZig80p1B03D+w==}
     peerDependencies:
-      standard-log: '>=4.0.2'
+      standard-log: '>=11.0.1'
 
-  standard-log@4.1.8:
-    resolution: {integrity: sha512-FXg79x4rCiYR19FdxBiH8OeR6Bb8KU8aI2sSiSMyeDuw98pUpvsaoG7wwdrb8touNq0g/MFnRjx1ZkUwrKxUdQ==}
-    peerDependencies:
-      global-store: ^1.0.0-beta.17
+  standard-log@12.1.2:
+    resolution: {integrity: sha512-vFTFTkiZhHg8PGpp7wnOPJsQQsO2DMX1bnEAVms8LF9IdJWNGGMD+1btV5pWUkFb7p/qDHUhZqN/do+nsg0rPQ==}
 
   static-extend@0.1.2:
     resolution: {integrity: sha512-72E9+uLc27Mt718pMHt9VMNiAL4LMsmDbBva8mxWUCkT07fSzEGMYUCk0XWY6lp0j6RBAG4cJ3mWuZv2OE3s0g==}
@@ -8001,11 +7984,8 @@ packages:
   type-name@2.0.2:
     resolution: {integrity: sha512-kkgkuqR/jKdKO5oh/I2SMu2dGbLXoJq0zkdgbxaqYK+hr9S9edwVVGf+tMUFTx2gH9TN2+Zu9JZ/Njonb3cjhA==}
 
-  type-plus@1.35.1:
-    resolution: {integrity: sha512-El1yp4aLFVpOwU/emJRxqw7+OsA8gUWILnrS8Ln5rafvHSG5tHopvmQLIBPdkFfRk65ZBcipVlk3XcfkL36jng==}
-
-  type-plus@3.15.0:
-    resolution: {integrity: sha512-iUiJgXQW2dsAmtJITdLDqBnzwh/M0l/fVBUL07B9z9wQQ08pMNGbEWoJH5udBBGt7bnS3aMxAGoZQYai9Eu6bA==}
+  type-plus@5.6.0:
+    resolution: {integrity: sha512-LAIvZzs6mKXYHzwRfGeOuWKsE5jHndwWlLheulMl6eWDSGa1bfZCd0aLQSMgP3HZTbazx/P2UumCqtOz5AMctA==}
 
   type-plus@7.6.2:
     resolution: {integrity: sha512-qUlXv9Y0/W56pg38m275IMD3WA03QbVoqNY16S3kmwtuA4gOT2iheyUdOp8NWrmXWpf7om98hzr7AZD/eW2jLA==}
@@ -8554,10 +8534,6 @@ packages:
   yargs-parser@15.0.3:
     resolution: {integrity: sha512-/MVEVjTXy/cGAjdtQf8dW3V9b97bPN7rNn8ETj6BmAQL7ibC7O1Q9SPJbGjgh3SlwoBNXMzj/ZGIj8mBgl12YA==}
 
-  yargs-parser@17.1.0:
-    resolution: {integrity: sha512-67zLl4/kWtp9eyVuxX+fHZ2Ey4ySWh0awDJlk/EtT0vzspsXbzrFsh76WjYSP3L++zhSwHQRUE3MCBe754RuEg==}
-    engines: {node: '>=6'}
-
   yargs-parser@18.1.3:
     resolution: {integrity: sha512-o50j0JeToy/4K6OZcaQmW6lyXXKhq7csREXcDwk2omFPJEwUNOVtJKvmDr9EI1fAJZUyZcRF7kxGBWmRXudrCQ==}
     engines: {node: '>=6'}
@@ -8604,6 +8580,9 @@ packages:
   yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+
+  zod@3.25.76:
+    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
 snapshots:
 
@@ -10273,6 +10252,10 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
 
+  '@just-func/types@0.5.1':
+    dependencies:
+      type-plus: 5.6.0
+
   '@lerna/add@3.21.0(supports-color@8.1.1)':
     dependencies:
       '@evocateur/pacote': 9.6.5(supports-color@8.1.1)
@@ -11530,8 +11513,6 @@ snapshots:
     dependencies:
       undici-types: 7.18.2
 
-  '@types/node@8.10.66': {}
-
   '@types/normalize-package-data@2.4.4': {}
 
   '@types/parse-json@4.0.2': {}
@@ -12395,11 +12376,6 @@ snapshots:
 
   callsites@3.1.0: {}
 
-  camel-case@4.1.2:
-    dependencies:
-      pascal-case: 3.1.2
-      tslib: 2.8.1
-
   camelcase-keys@2.1.0:
     dependencies:
       camelcase: 2.1.1
@@ -12513,23 +12489,20 @@ snapshots:
 
   cli-width@3.0.0: {}
 
-  clibuilder@6.5.1:
+  clibuilder@10.1.0:
     dependencies:
-      '@types/node': 8.10.66
-      camel-case: 4.1.2
-      enquirer: 2.4.1
       find-installed-packages: 2.1.8
-      find-up: 4.1.0
-      global-store: 1.0.0-beta.21
-      iso-error: 3.2.5
+      js-yaml: 4.3.2
+      jsonc-parser: 3.3.1
       pad-right: 0.2.2
       search-packages: 2.1.0
-      standard-log: 4.1.8(global-store@1.0.0-beta.21)
-      standard-log-color: 1.5.25(standard-log@4.1.8(global-store@1.0.0-beta.21))
-      tslib: 1.14.1
-      type-plus: 1.35.1
+      standard-log: 12.1.2
+      standard-log-color: 12.1.2(standard-log@12.1.2)
+      tmp: 0.2.7
+      tslib: 2.8.1
+      type-plus: 7.6.2
       wordwrap: 1.0.0
-      yargs-parser: 17.1.0
+      zod: 3.25.76
 
   cliui@5.0.0:
     dependencies:
@@ -12598,7 +12571,7 @@ snapshots:
     dependencies:
       color-name: 1.1.4
 
-  color-map@1.1.4: {}
+  color-map@2.2.0: {}
 
   color-name@1.1.3: {}
 
@@ -14544,8 +14517,6 @@ snapshots:
 
   is-negative-zero@2.0.3: {}
 
-  is-node@1.1.1: {}
-
   is-npm@5.0.0: {}
 
   is-number-object@1.1.1:
@@ -15969,10 +15940,6 @@ snapshots:
       currently-unhandled: 0.4.1
       signal-exit: 3.0.7
 
-  lower-case@2.0.2:
-    dependencies:
-      tslib: 2.8.1
-
   lowercase-keys@1.0.1: {}
 
   lowercase-keys@2.0.0: {}
@@ -16383,11 +16350,6 @@ snapshots:
   neo-async@2.6.2: {}
 
   nice-try@1.0.5: {}
-
-  no-case@3.0.4:
-    dependencies:
-      lower-case: 2.0.2
-      tslib: 2.8.1
 
   node-addon-api@3.2.1: {}
 
@@ -16992,11 +16954,6 @@ snapshots:
       parse-path: 7.1.0
 
   parse5@6.0.1: {}
-
-  pascal-case@3.1.2:
-    dependencies:
-      no-case: 3.0.4
-      tslib: 2.8.1
 
   pascalcase@0.1.1: {}
 
@@ -17958,21 +17915,19 @@ snapshots:
 
   stackback@0.0.2: {}
 
-  standard-log-color@1.5.25(standard-log@4.1.8(global-store@1.0.0-beta.21)):
+  standard-log-color@12.1.2(standard-log@12.1.2):
     dependencies:
-      color-map: 1.1.4
-      standard-log: 4.1.8(global-store@1.0.0-beta.21)
-      tslib: 2.8.1
-      unpartial: 0.6.4
+      color-map: 2.2.0
+      standard-log: 12.1.2
+      supports-color: 8.1.1
+      unpartial: 1.0.7
 
-  standard-log@4.1.8(global-store@1.0.0-beta.21):
+  standard-log@12.1.2:
     dependencies:
-      global-store: 1.0.0-beta.21
-      is-node: 1.1.1
+      '@just-func/types': 0.5.1
       iso-error: 3.2.5
       ms: 2.1.3
-      tslib: 2.8.1
-      type-plus: 3.15.0
+      type-plus: 7.6.2
       upper-case: 2.0.2
 
   static-extend@0.1.2:
@@ -18469,14 +18424,10 @@ snapshots:
 
   type-name@2.0.2: {}
 
-  type-plus@1.35.1:
-    dependencies:
-      unpartial: 0.6.4
-
-  type-plus@3.15.0:
+  type-plus@5.6.0:
     dependencies:
       tersify: 3.12.1
-      unpartial: 0.6.4
+      unpartial: 1.0.7
 
   type-plus@7.6.2:
     dependencies:
@@ -19038,11 +18989,6 @@ snapshots:
       camelcase: 5.3.1
       decamelize: 1.2.0
 
-  yargs-parser@17.1.0:
-    dependencies:
-      camelcase: 5.3.1
-      decamelize: 1.2.0
-
   yargs-parser@18.1.3:
     dependencies:
       camelcase: 5.3.1
@@ -19124,3 +19070,5 @@ snapshots:
       yargs-parser: 22.0.0
 
   yocto-queue@0.1.0: {}
+
+  zod@3.25.76: {}
