@@ -18,7 +18,7 @@
 		"clean": "rimraf .ts coverage lib libm"
 	},
 	"dependencies": {
-		"clibuilder": "~6.5.1",
+		"clibuilder": "~6.6.0",
 		"update-notifier": "^5.1.0",
 		"chalk": "^4.1.0",
 		"find-installed-packages": "^2.1.6"
