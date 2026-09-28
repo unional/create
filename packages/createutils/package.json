@@ -28,7 +28,7 @@
 		"clean": "rimraf .ts coverage lib"
 	},
 	"dependencies": {
-		"chalk": "^4.1.0",
+		"chalk": "^6.0.0",
 		"filenamify": "^4.2.0",
 		"find-up": "^5.0.0",
 		"valid-filename": "^3.1.0",
