@@ -35,7 +35,7 @@
 		"validate-npm-package-name": "^3.0.0"
 	},
 	"devDependencies": {
-		"clibuilder": "~6.5.1"
+		"clibuilder": "~6.6.0"
 	},
 	"engines": {
 		"node": "^20.19.0 || ^22.13.0 || >=24"

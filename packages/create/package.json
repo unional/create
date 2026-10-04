@@ -42,7 +42,7 @@
 	"dependencies": {
 		"@unional/createutils": "workspace:^",
 		"chalk": "^4.1.0",
-		"clibuilder": "~6.5.1",
+		"clibuilder": "~6.6.0",
 		"find-installed-packages": "^2.1.6",
 		"iso-error": "^3.2.5",
 		"ncp": "^2.0.0",
