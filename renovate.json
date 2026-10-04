@@ -3,6 +3,31 @@
 	"extends": ["github>unional/renovate-preset"],
 	"packageRules": [
 		{
+			"description": "eslint 10 as a dependency of the published devpkg-node/monorepo-scripts changes the toolchain consumers install (eslint 7 today); that needs a deliberate major release.",
+			"matchPackageNames": ["eslint"],
+			"allowedVersions": "<10"
+		},
+		{
+			"description": "eslint-plugin-harmony 8 pairs with eslint 10; hold together with eslint.",
+			"matchPackageNames": ["eslint-plugin-harmony"],
+			"allowedVersions": "<8"
+		},
+		{
+			"description": "chalk 6 is ESM-only; the CLI packages (create, create-monorepo, dev-scripts) are CommonJS. Lift after they migrate to ESM.",
+			"matchPackageNames": ["chalk"],
+			"allowedVersions": "<6"
+		},
+		{
+			"description": "clibuilder 11 is ESM-only and drops createCli/createCommand; dev-scripts and the other CLIs need a rewrite first.",
+			"matchPackageNames": ["clibuilder"],
+			"allowedVersions": "<11"
+		},
+		{
+			"description": "update-notifier 6+ is ESM-only; the CJS bin entry points need an ESM migration first.",
+			"matchPackageNames": ["@types/update-notifier"],
+			"allowedVersions": "<6"
+		},
+		{
 			"description": "The packageManager pin is toolchain, so non-major updates merge themselves.",
 			"matchDepTypes": ["packageManager"],
 			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
