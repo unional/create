@@ -3,6 +3,21 @@
 	"extends": ["github>unional/renovate-preset"],
 	"packageRules": [
 		{
+			"description": "chalk 6 is ESM-only; the CLI packages (create, create-monorepo, dev-scripts) are CommonJS. Lift after they migrate to ESM.",
+			"matchPackageNames": ["chalk"],
+			"allowedVersions": "<6"
+		},
+		{
+			"description": "clibuilder 11 is ESM-only and drops createCli/createCommand; dev-scripts and the other CLIs need a rewrite first.",
+			"matchPackageNames": ["clibuilder"],
+			"allowedVersions": "<11"
+		},
+		{
+			"description": "update-notifier 6+ is ESM-only; the CJS bin entry points need an ESM migration first.",
+			"matchPackageNames": ["@types/update-notifier"],
+			"allowedVersions": "<6"
+		},
+		{
 			"description": "The packageManager pin is toolchain, so non-major updates merge themselves.",
 			"matchDepTypes": ["packageManager"],
 			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
