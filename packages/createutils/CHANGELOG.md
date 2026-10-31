@@ -1,5 +1,11 @@
 # @unional/createutils
 
+## 2.0.1
+
+### Patch Changes
+
+- a99ea9a: Include `CHANGELOG.md` in the published package.
+
 ## 2.0.0
 
 ### Major Changes

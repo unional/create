@@ -1,6 +1,6 @@
 {
 	"name": "@unional/monorepo-scripts",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"description": "initializes and manages monorepo",
 	"keywords": [
 		"@unional/create",
