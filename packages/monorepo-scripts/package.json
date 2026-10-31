@@ -34,7 +34,8 @@
 		"artifacts",
 		"config",
 		"lib",
-		"libm"
+		"libm",
+		"CHANGELOG.md"
 	],
 	"bin": {
 		"monorepo-scripts": "lib/bin.js"

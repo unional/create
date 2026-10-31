@@ -25,7 +25,8 @@
 		"lib",
 		"libm",
 		"monorepo",
-		"simple"
+		"simple",
+		"CHANGELOG.md"
 	],
 	"dependencies": {
 		"@babel/core": "^8.0.0",
