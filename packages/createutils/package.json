@@ -14,7 +14,8 @@
 	"files": [
 		"lib",
 		"src",
-		"!**/*.{spec,test,unit,accept,integrate,system,perf,stress,study,stories}.*"
+		"!**/*.{spec,test,unit,accept,integrate,system,perf,stress,study,stories}.*",
+		"CHANGELOG.md"
 	],
 	"type": "module",
 	"exports": {
