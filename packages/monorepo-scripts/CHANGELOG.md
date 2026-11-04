@@ -1,5 +1,11 @@
 # @unional/monorepo-scripts
 
+## 0.1.5
+
+### Patch Changes
+
+- a99ea9a: Include `CHANGELOG.md` in the published package.
+
 ## 0.1.4
 
 ### Patch Changes

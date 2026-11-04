@@ -1,5 +1,11 @@
 # @unional/devpkg-node
 
+## 1.6.5
+
+### Patch Changes
+
+- a99ea9a: Include `CHANGELOG.md` in the published package.
+
 ## 1.6.4
 
 ### Patch Changes
