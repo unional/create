@@ -1,6 +1,6 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["github>unional/renovate-preset"],
+	"extends": ["github>repobuddy/renovate-preset"],
 	"packageRules": [
 		{
 			"description": "eslint 10 as a dependency of the published devpkg-node/monorepo-scripts changes the toolchain consumers install (eslint 7 today); that needs a deliberate major release.",
